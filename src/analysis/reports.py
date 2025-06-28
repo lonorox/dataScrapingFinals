@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import sqlite3
 import json
+import base64
 from datetime import datetime, timedelta
 from typing import Dict, List, Any, Optional, Tuple
 import os
@@ -20,6 +21,9 @@ from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.chart import LineChart, BarChart, PieChart, Reference
 import jinja2
 import webbrowser
+
+# Import constants and templates
+from .constants import HTML_REPORT_TEMPLATE, VISUALIZATION_IMAGES, ALERT_STYLES, REPORT_SETTINGS
 
 
 class ReportGenerator:
@@ -60,6 +64,73 @@ class ReportGenerator:
         """Close database connection."""
         if self.connection:
             self.connection.close()
+    
+    def load_visualization_images(self, reports_dir: str = "data_output/reports") -> Dict[str, str]:
+        """Load and encode visualization images as base64 strings."""
+        images = {}
+        
+        if not os.path.exists(reports_dir):
+            print(f"Reports directory not found: {reports_dir}")
+            return images
+        
+        for image_key, filename in VISUALIZATION_IMAGES.items():
+            image_path = os.path.join(reports_dir, filename)
+            if os.path.exists(image_path):
+                try:
+                    with open(image_path, 'rb') as img_file:
+                        img_data = img_file.read()
+                        img_base64 = base64.b64encode(img_data).decode('utf-8')
+                        images[image_key] = img_base64
+                        print(f"Loaded visualization: {filename}")
+                except Exception as e:
+                    print(f"Error loading image {filename}: {e}")
+            else:
+                print(f"Image not found: {image_path}")
+        
+        return images
+    
+    def generate_data_quality_issues(self) -> List[str]:
+        """Generate list of data quality issues found in the dataset."""
+        issues = []
+        
+        if self.df is None:
+            return ["No data loaded"]
+        
+        # Check for missing titles
+        missing_titles = self.df['title'].isnull().sum()
+        if missing_titles > 0:
+            issues.append(f"{missing_titles} articles missing titles")
+        
+        # Check for missing summaries
+        if 'summary' in self.df.columns:
+            missing_summaries = self.df['summary'].isnull().sum()
+            if missing_summaries > 0:
+                issues.append(f"{missing_summaries} articles missing summaries")
+        
+        # Check for missing authors
+        if 'author' in self.df.columns:
+            missing_authors = self.df['author'].isnull().sum()
+            if missing_authors > 0:
+                issues.append(f"{missing_authors} articles missing authors")
+        
+        # Check for duplicates
+        duplicates = self.df.duplicated().sum()
+        if duplicates > 0:
+            issues.append(f"{duplicates} duplicate articles found")
+        
+        # Check for URL duplicates
+        if 'url' in self.df.columns:
+            url_duplicates = self.df['url'].duplicated().sum()
+            if url_duplicates > 0:
+                issues.append(f"{url_duplicates} duplicate URLs found")
+        
+        # Check for very short titles
+        if 'title' in self.df.columns:
+            short_titles = (self.df['title'].str.len() < 10).sum()
+            if short_titles > 0:
+                issues.append(f"{short_titles} articles have very short titles (< 10 characters)")
+        
+        return issues
     
     def generate_executive_summary(self) -> Dict[str, Any]:
         """Generate executive summary with key insights."""
@@ -410,7 +481,7 @@ class ReportGenerator:
         return exported_files
     
     def generate_html_report(self, output_path: str = "data_output/reports/comprehensive_report.html") -> str:
-        """Generate comprehensive HTML report."""
+        """Generate comprehensive HTML report with visualizations."""
         if self.df is None:
             return "No data to generate report"
         
@@ -420,119 +491,11 @@ class ReportGenerator:
         # Generate analysis data
         executive_summary = self.generate_executive_summary()
         detailed_analysis = self.generate_detailed_analysis()
+        data_quality_issues = self.generate_data_quality_issues()
         
-        # HTML template
-        html_template = """
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Scraping Analysis Report</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5; }
-        .container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; text-align: center; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #34495e; margin-top: 30px; }
-        h3 { color: #7f8c8d; }
-        .metric { background-color: #ecf0f1; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #3498db; }
-        .insight { background-color: #e8f5e8; padding: 10px; margin: 5px 0; border-radius: 5px; border-left: 4px solid #27ae60; }
-        .recommendation { background-color: #fff3cd; padding: 10px; margin: 5px 0; border-radius: 5px; border-left: 4px solid #ffc107; }
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0; }
-        .stat-card { background-color: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid #dee2e6; }
-        .stat-number { font-size: 2em; font-weight: bold; color: #3498db; }
-        .stat-label { color: #6c757d; margin-top: 5px; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
-        th { background-color: #3498db; color: white; }
-        tr:nth-child(even) { background-color: #f2f2f2; }
-        .timestamp { text-align: center; color: #6c757d; font-style: italic; margin-top: 30px; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Data Scraping Analysis Report</h1>
-        <p class="timestamp">Generated on: {{ timestamp }}</p>
-        
-        <h2>Executive Summary</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">{{ overview.total_articles }}</div>
-                <div class="stat-label">Total Articles</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">{{ overview.unique_sources }}</div>
-                <div class="stat-label">Unique Sources</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">{{ overview.unique_authors }}</div>
-                <div class="stat-label">Unique Authors</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">{{ overview.date_range.start[:10] if overview.date_range.start != 'Unknown' else 'N/A' }}</div>
-                <div class="stat-label">Start Date</div>
-            </div>
-        </div>
-        
-        <h3>Key Insights</h3>
-        {% for insight in key_insights %}
-        <div class="insight">{{ insight }}</div>
-        {% endfor %}
-        
-        <h3>Recommendations</h3>
-        {% for rec in recommendations %}
-        <div class="recommendation">{{ rec }}</div>
-        {% endfor %}
-        
-        <h2>Detailed Analysis</h2>
-        
-        <h3>Source Distribution</h3>
-        <table>
-            <tr>
-                <th>Source Type</th>
-                <th>Count</th>
-            </tr>
-            {% for source_type, count in source_types.items() %}
-            <tr>
-                <td>{{ source_type }}</td>
-                <td>{{ count }}</td>
-            </tr>
-            {% endfor %}
-        </table>
-        
-        <h3>Top Sources</h3>
-        <table>
-            <tr>
-                <th>Source</th>
-                <th>Article Count</th>
-                <th>Source Type</th>
-            </tr>
-            {% for source, data in top_sources.items() %}
-            <tr>
-                <td>{{ source }}</td>
-                <td>{{ data.article_count }}</td>
-                <td>{{ data.source_type }}</td>
-            </tr>
-            {% endfor %}
-        </table>
-        
-        <h3>Performance Metrics</h3>
-        <div class="metric">
-            <strong>Data Completeness:</strong><br>
-            Titles: {{ performance_metrics.data_completeness.titles }}%<br>
-            Summaries: {{ performance_metrics.data_completeness.summaries }}%<br>
-            Authors: {{ performance_metrics.data_completeness.authors }}%
-        </div>
-        
-        <div class="metric">
-            <strong>Source Efficiency:</strong><br>
-            Articles per Source: {{ performance_metrics.source_efficiency.articles_per_source }}<br>
-            Top Source Contribution: {{ performance_metrics.source_efficiency.top_source_contribution }}%
-        </div>
-    </div>
-</body>
-</html>
-        """
+        # Load visualization images
+        print("Loading visualization images...")
+        visualization_images = self.load_visualization_images()
         
         # Prepare template data
         template_data = {
@@ -542,21 +505,25 @@ class ReportGenerator:
             "recommendations": executive_summary["recommendations"],
             "performance_metrics": executive_summary["performance_metrics"],
             "source_types": executive_summary["overview"]["source_types"],
-            "top_sources": dict(list(detailed_analysis["source_analysis"]["top_sources"].items())[:10])
+            "top_sources": dict(list(detailed_analysis["source_analysis"]["top_sources"].items())[:REPORT_SETTINGS['max_top_sources']]),
+            "data_quality_issues": data_quality_issues,
+            # Add visualization images
+            **visualization_images
         }
         
         # Render template
-        template = jinja2.Template(html_template)
+        template = jinja2.Template(HTML_REPORT_TEMPLATE)
         html_content = template.render(**template_data)
         
         # Write to file
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(html_content)
         
+        print(f"HTML report generated: {output_path}")
         return output_path
     
     def generate_comprehensive_report(self, output_dir: str = "data_output/reports") -> Dict[str, str]:
-        """Generate comprehensive report in multiple formats."""
+        """Generate comprehensive report in multiple formats with visualizations."""
         if self.df is None:
             return {"error": "No data loaded"}
         
@@ -572,6 +539,11 @@ class ReportGenerator:
         print("Generating detailed analysis...")
         detailed_analysis = self.generate_detailed_analysis()
         
+        print("Checking data quality...")
+        data_quality_issues = self.generate_data_quality_issues()
+        if data_quality_issues:
+            print(f"Found {len(data_quality_issues)} data quality issues")
+        
         print("Exporting to Excel...")
         excel_path = self.export_to_excel(f"{output_dir}/comprehensive_report_{timestamp}.xlsx")
         generated_files["excel"] = excel_path
@@ -580,7 +552,7 @@ class ReportGenerator:
         csv_files = self.export_to_csv(output_dir)
         generated_files["csv"] = csv_files
         
-        print("Generating HTML report...")
+        print("Generating enhanced HTML report with visualizations...")
         html_path = self.generate_html_report(f"{output_dir}/comprehensive_report_{timestamp}.html")
         generated_files["html"] = html_path
         
@@ -588,7 +560,9 @@ class ReportGenerator:
         json_report = {
             "generated_at": datetime.now().isoformat(),
             "executive_summary": executive_summary,
-            "detailed_analysis": detailed_analysis
+            "detailed_analysis": detailed_analysis,
+            "data_quality_issues": data_quality_issues,
+            "visualization_images_loaded": list(self.load_visualization_images().keys())
         }
         
         json_path = f"{output_dir}/comprehensive_report_{timestamp}.json"
