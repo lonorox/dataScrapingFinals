@@ -20,6 +20,24 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 
 
+def custom_json_encoder(obj):
+    """Custom JSON encoder to handle pandas Period objects and other non-serializable types."""
+    if hasattr(obj, 'strftime'):  # datetime objects
+        return obj.isoformat()
+    elif hasattr(obj, 'year'):  # pandas Period objects
+        return str(obj)
+    elif isinstance(obj, np.integer):
+        return int(obj)
+    elif isinstance(obj, np.floating):
+        return float(obj)
+    elif isinstance(obj, np.ndarray):
+        return obj.tolist()
+    elif pd.isna(obj):
+        return None
+    else:
+        return str(obj)
+
+
 class TrendAnalysis:
     """Trend analysis for scraped data."""
     
@@ -185,69 +203,39 @@ class TrendAnalysis:
             
             comparison["temporal_comparison"] = source_temporal
         
-        # Correlation analysis between sources
-        if 'pub_date' in self.df.columns:
-            # Create daily time series for each source
-            source_correlations = {}
-            top_sources_list = top_sources.head(5).index.tolist()
-            
-            for i, source1 in enumerate(top_sources_list):
-                for source2 in top_sources_list[i+1:]:
-                    source1_data = self.df[self.df['source'] == source1]
-                    source2_data = self.df[self.df['source'] == source2]
-                    
-                    if len(source1_data) > 5 and len(source2_data) > 5:
-                        source1_daily = source1_data.groupby(source1_data['pub_date'].dt.date).size()
-                        source2_daily = source2_data.groupby(source2_data['pub_date'].dt.date).size()
-                        
-                        # Align the series
-                        common_dates = source1_daily.index.intersection(source2_daily.index)
-                        if len(common_dates) > 5:
-                            corr = source1_daily[common_dates].corr(source2_daily[common_dates])
-                            source_correlations[f"{source1}_vs_{source2}"] = float(corr)
-            
-            comparison["correlation_analysis"] = source_correlations
-        
         return comparison
     
     def keyword_trend_analysis(self, keywords: Optional[List[str]] = None) -> Dict[str, Any]:
-        """Analyze trends in keyword usage over time."""
-        if self.df is None or 'title' not in self.df.columns:
-            return {"error": "No title data available"}
+        """Analyze trends for specific keywords."""
+        if self.df is None or 'pub_date' not in self.df.columns:
+            return {"error": "No temporal data available"}
         
         if keywords is None:
-            # Extract common keywords from titles
-            all_titles = ' '.join(self.df['title'].dropna().astype(str))
-            words = re.findall(r'\b\w+\b', all_titles.lower())
-            word_counts = Counter(words)
-            # Filter out common stop words and short words
-            stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by', 'is', 'are', 'was', 'were', 'be', 'been', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could', 'should', 'may', 'might', 'must', 'can', 'this', 'that', 'these', 'those', 'i', 'you', 'he', 'she', 'it', 'we', 'they', 'me', 'him', 'her', 'us', 'them', 'my', 'your', 'his', 'her', 'its', 'our', 'their', 'mine', 'yours', 'his', 'hers', 'ours', 'theirs'}
-            keywords = [word for word, count in word_counts.most_common(20) 
-                       if word not in stop_words and len(word) > 3]
+            # Default keywords to analyze
+            keywords = ['AI', 'artificial intelligence', 'machine learning', 'data', 'technology', 'startup']
         
         keyword_trends = {}
         
         for keyword in keywords:
             # Find articles containing the keyword
-            keyword_articles = self.df[self.df['title'].str.contains(keyword, case=False, na=False)]
+            keyword_articles = self.df[
+                self.df['title'].str.contains(keyword, case=False, na=False) |
+                self.df['summary'].str.contains(keyword, case=False, na=False)
+            ].copy()
             
-            if len(keyword_articles) > 0 and 'pub_date' in keyword_articles.columns:
-                # Group by month
+            if len(keyword_articles) > 0:
                 keyword_articles['month'] = keyword_articles['pub_date'].dt.to_period('M')
-                monthly_counts = keyword_articles.groupby('month').size()
+                monthly_keyword_counts = keyword_articles.groupby('month').size()
                 
                 keyword_trends[keyword] = {
-                    "total_mentions": len(keyword_articles),
-                    "monthly_trend": monthly_counts.to_dict(),
-                    "peak_month": str(monthly_counts.idxmax()) if len(monthly_counts) > 0 else None,
-                    "trend_direction": "increasing" if len(monthly_counts) > 1 and monthly_counts.iloc[-1] > monthly_counts.iloc[0] else "stable"
+                    "total_articles": len(keyword_articles),
+                    "percentage_of_total": float(len(keyword_articles) / len(self.df) * 100),
+                    "monthly_trend": monthly_keyword_counts.to_dict(),
+                    "peak_month": str(monthly_keyword_counts.idxmax()) if len(monthly_keyword_counts) > 0 else None,
+                    "trend_direction": "increasing" if len(monthly_keyword_counts) > 1 and monthly_keyword_counts.iloc[-1] > monthly_keyword_counts.iloc[0] else "stable"
                 }
         
-        return {
-            "analyzed_keywords": keywords,
-            "keyword_trends": keyword_trends,
-            "top_keywords": sorted(keyword_trends.items(), key=lambda x: x[1]["total_mentions"], reverse=True)[:10]
-        }
+        return keyword_trends
     
     def source_type_analysis(self) -> Dict[str, Any]:
         """Analyze trends by source type (blog, news, rss)."""
@@ -385,6 +373,27 @@ class TrendAnalysis:
         
         print(f"Trend visualizations saved to {output_dir}")
     
+    def _stringify_dict_keys(self, d):
+        """Recursively convert all dictionary keys to strings, including inside lists of dicts and tuples as keys."""
+        if isinstance(d, dict):
+            new_dict = {}
+            for k, v in d.items():
+                # Convert tuple keys to a string representation
+                if isinstance(k, tuple):
+                    k_str = '-'.join(str(ki) for ki in k)
+                else:
+                    k_str = str(k)
+                new_dict[k_str] = self._stringify_dict_keys(v)
+            return new_dict
+        elif isinstance(d, list):
+            return [self._stringify_dict_keys(i) for i in d]
+        elif isinstance(d, pd.Series):
+            return {str(k): self._stringify_dict_keys(v) for k, v in d.to_dict().items()}
+        elif isinstance(d, pd.DataFrame):
+            return {str(k): self._stringify_dict_keys(v) for k, v in d.to_dict('index').items()}
+        else:
+            return d
+    
     def export_trend_analysis(self, output_dir: str = "data_output/reports") -> Dict[str, str]:
         """Export all trend analysis to files."""
         os.makedirs(output_dir, exist_ok=True)
@@ -401,16 +410,16 @@ class TrendAnalysis:
         # Combine all analyses
         all_trends = {
             "generated_at": datetime.now().isoformat(),
-            "temporal_trends": temporal_trends,
-            "source_comparison": source_comparison,
-            "keyword_trends": keyword_trends,
-            "source_type_analysis": source_type_analysis
+            "temporal_trends": self._stringify_dict_keys(temporal_trends),
+            "source_comparison": self._stringify_dict_keys(source_comparison),
+            "keyword_trends": self._stringify_dict_keys(keyword_trends),
+            "source_type_analysis": self._stringify_dict_keys(source_type_analysis)
         }
         
         # Export to JSON
         json_path = f"{output_dir}/trend_analysis_{timestamp}.json"
         with open(json_path, 'w') as f:
-            json.dump(all_trends, f, indent=2, default=str)
+            json.dump(all_trends, f, indent=2, default=custom_json_encoder)
         exported_files["json"] = json_path
         
         # Export temporal data to CSV

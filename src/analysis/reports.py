@@ -22,14 +22,18 @@ from openpyxl.chart import LineChart, BarChart, PieChart, Reference
 import jinja2
 import webbrowser
 
+# Import analysis modules
+from src.analysis.statistic import DataStatistics
+from src.analysis.trends import TrendAnalysis
+
 # Import constants and templates
-from .constants import HTML_REPORT_TEMPLATE, VISUALIZATION_IMAGES, ALERT_STYLES, REPORT_SETTINGS
+from src.analysis.constants import HTML_REPORT_TEMPLATE, VISUALIZATION_IMAGES, ALERT_STYLES, REPORT_SETTINGS
 
 
 class ReportGenerator:
     """Generate comprehensive reports with insights and data export."""
     
-    def __init__(self, data_path: str = "data_output/combined.csv", 
+    def __init__(self, data_path: str = "data_output",
                  db_path: str = "data_output/scraped_articles.db"):
         """Initialize with data paths."""
         self.data_path = data_path
@@ -37,23 +41,34 @@ class ReportGenerator:
         self.df = None
         self.connection = None
         
+        # Initialize analysis modules
+        self.statistics = DataStatistics(os.path.join(data_path, "combined.csv"), db_path)
+        self.trends = TrendAnalysis(os.path.join(data_path, "combined.csv"), db_path)
+        
     def load_data(self) -> bool:
         """Load data from CSV or database."""
         try:
-            if os.path.exists(self.data_path):
-                self.df = pd.read_csv(self.data_path)
-                print(f"Loaded {len(self.df)} records from CSV")
+            # Check for combined.csv in data_output directory
+            combined_csv_path = os.path.join(self.data_path, "combined.csv")
+            if os.path.exists(combined_csv_path):
+                self.df = pd.read_csv(combined_csv_path)
+                print(f"Loaded {len(self.df)} records from combined.csv")
             elif os.path.exists(self.db_path):
                 self.connection = sqlite3.connect(self.db_path)
                 self.df = pd.read_sql_query("SELECT * FROM articles", self.connection)
                 print(f"Loaded {len(self.df)} records from database")
             else:
-                print("No data files found")
+                print(f"No data files found in {self.data_path}")
+                print(f"Available files: {[f for f in os.listdir(self.data_path) if os.path.isfile(os.path.join(self.data_path, f))]}")
                 return False
             
             # Preprocess dates
             if 'publication_date_datetime' in self.df.columns:
                 self.df['pub_date'] = pd.to_datetime(self.df['publication_date_datetime'], errors='coerce')
+            
+            # Load data into analysis modules
+            self.statistics.load_data()
+            self.trends.load_data()
             
             return True
         except Exception as e:
@@ -64,8 +79,10 @@ class ReportGenerator:
         """Close database connection."""
         if self.connection:
             self.connection.close()
+        self.statistics.close_connection()
+        self.trends.close_connection()
     
-    def load_visualization_images(self, reports_dir: str = "data_output/reports") -> Dict[str, str]:
+    def load_visualization_images(self, reports_dir: str = "data_output/processed") -> Dict[str, str]:
         """Load and encode visualization images as base64 strings."""
         images = {}
         
@@ -96,31 +113,34 @@ class ReportGenerator:
         if self.df is None:
             return ["No data loaded"]
         
+        # Get data quality report from statistics module
+        quality_report = self.statistics.data_quality_check()
+        
         # Check for missing titles
-        missing_titles = self.df['title'].isnull().sum()
-        if missing_titles > 0:
-            issues.append(f"{missing_titles} articles missing titles")
+        if "title" in quality_report.get("missing_values", {}):
+            missing_titles = quality_report["missing_values"]["title"]["count"]
+            if missing_titles > 0:
+                issues.append(f"{missing_titles} articles missing titles")
         
         # Check for missing summaries
-        if 'summary' in self.df.columns:
-            missing_summaries = self.df['summary'].isnull().sum()
+        if "summary" in quality_report.get("missing_values", {}):
+            missing_summaries = quality_report["missing_values"]["summary"]["count"]
             if missing_summaries > 0:
                 issues.append(f"{missing_summaries} articles missing summaries")
         
         # Check for missing authors
-        if 'author' in self.df.columns:
-            missing_authors = self.df['author'].isnull().sum()
+        if "author" in quality_report.get("missing_values", {}):
+            missing_authors = quality_report["missing_values"]["author"]["count"]
             if missing_authors > 0:
                 issues.append(f"{missing_authors} articles missing authors")
         
         # Check for duplicates
-        duplicates = self.df.duplicated().sum()
-        if duplicates > 0:
-            issues.append(f"{duplicates} duplicate articles found")
-        
-        # Check for URL duplicates
-        if 'url' in self.df.columns:
-            url_duplicates = self.df['url'].duplicated().sum()
+        if "duplicates" in quality_report:
+            duplicates = quality_report["duplicates"]["total"]
+            if duplicates > 0:
+                issues.append(f"{duplicates} duplicate articles found")
+            
+            url_duplicates = quality_report["duplicates"].get("url_duplicates", 0)
             if url_duplicates > 0:
                 issues.append(f"{url_duplicates} duplicate URLs found")
         
@@ -136,6 +156,9 @@ class ReportGenerator:
         """Generate executive summary with key insights."""
         if self.df is None:
             return {"error": "No data loaded"}
+        
+        # Get statistical summary from statistics module
+        stats_summary = self.statistics.statistical_summary()
         
         summary = {
             "overview": {},
@@ -187,17 +210,7 @@ class ReportGenerator:
         
         # Recommendations
         recommendations = []
-        
-        if source_concentration > 80:
-            recommendations.append("Consider diversifying sources to reduce dependency on top sources")
-        
-        if 'pub_date' in self.df.columns and len(daily_counts) > 1:
-            if daily_counts.iloc[-1] < daily_counts.iloc[0]:
-                recommendations.append("Monitor declining publication rates and investigate causes")
-        
-        if self.df['title'].isnull().sum() > len(self.df) * 0.1:
-            recommendations.append("Improve data quality by ensuring all articles have titles")
-        
+    
         summary["recommendations"] = recommendations
         
         # Performance metrics
@@ -216,103 +229,30 @@ class ReportGenerator:
         return summary
     
     def generate_detailed_analysis(self) -> Dict[str, Any]:
-        """Generate detailed analysis report."""
+        """Generate detailed analysis report using statistics and trends modules."""
         if self.df is None:
             return {"error": "No data loaded"}
         
+        # Get analysis from specialized modules
+        stats_summary = self.statistics.statistical_summary()
+        distributions = self.statistics.distribution_analysis()
+        temporal_trends = self.trends.temporal_trend_analysis()
+        source_comparison = self.trends.source_comparative_analysis()
+        source_type_analysis = self.trends.source_type_analysis()
+        
         analysis = {
-            "source_analysis": {},
-            "content_analysis": {},
-            "temporal_analysis": {},
-            "quality_analysis": {}
-        }
-        
-        # Source analysis
-        source_stats = self.df.groupby('source').agg({
-            'title': 'count',
-            'pub_date': ['min', 'max'] if 'pub_date' in self.df.columns else None
-        }).round(2)
-        
-        if 'pub_date' in self.df.columns:
-            source_stats.columns = ['article_count', 'first_article', 'last_article']
-            source_stats['date_range_days'] = (source_stats['last_article'] - source_stats['first_article']).dt.days
-            source_stats['articles_per_day'] = source_stats['article_count'] / source_stats['date_range_days']
-        else:
-            source_stats.columns = ['article_count']
-        
-        analysis["source_analysis"] = {
-            "top_sources": source_stats.nlargest(10, 'article_count').to_dict('index'),
-            "source_type_distribution": self.df['source_type'].value_counts().to_dict(),
-            "source_performance_metrics": {
-                "avg_articles_per_source": float(len(self.df) / self.df['source'].nunique()),
-                "source_concentration_index": float((self.df['source'].value_counts().head(5).sum() / len(self.df)) * 100)
-            }
-        }
-        
-        # Content analysis
-        content_metrics = {}
-        
-        if 'title' in self.df.columns:
-            title_lengths = self.df['title'].str.len()
-            content_metrics["title"] = {
-                "avg_length": float(title_lengths.mean()),
-                "median_length": float(title_lengths.median()),
-                "std_length": float(title_lengths.std()),
-                "min_length": int(title_lengths.min()),
-                "max_length": int(title_lengths.max())
-            }
-        
-        if 'summary' in self.df.columns:
-            summary_lengths = self.df['summary'].str.len()
-            content_metrics["summary"] = {
-                "avg_length": float(summary_lengths.mean()),
-                "median_length": float(summary_lengths.median()),
-                "std_length": float(summary_lengths.std()),
-                "min_length": int(summary_lengths.min()),
-                "max_length": int(summary_lengths.max())
-            }
-        
-        analysis["content_analysis"] = content_metrics
-        
-        # Temporal analysis
-        if 'pub_date' in self.df.columns:
-            temporal_metrics = {}
-            
-            # Daily patterns
-            daily_counts = self.df.groupby(self.df['pub_date'].dt.date).size()
-            temporal_metrics["daily"] = {
-                "avg_articles_per_day": float(daily_counts.mean()),
-                "peak_day": str(daily_counts.idxmax()),
-                "peak_count": int(daily_counts.max()),
-                "variance": float(daily_counts.var())
-            }
-            
-            # Monthly patterns
-            monthly_counts = self.df.groupby(self.df['pub_date'].dt.to_period('M')).size()
-            temporal_metrics["monthly"] = {
-                "avg_articles_per_month": float(monthly_counts.mean()),
-                "peak_month": str(monthly_counts.idxmax()),
-                "peak_count": int(monthly_counts.max()),
-                "trend": "increasing" if len(monthly_counts) > 1 and monthly_counts.iloc[-1] > monthly_counts.iloc[0] else "stable"
-            }
-            
-            analysis["temporal_analysis"] = temporal_metrics
-        
-        # Quality analysis
-        quality_metrics = {
-            "missing_data": {
-                "titles": int(self.df['title'].isnull().sum()),
-                "summaries": int(self.df['summary'].isnull().sum()) if 'summary' in self.df.columns else 0,
-                "authors": int(self.df['author'].isnull().sum()) if 'author' in self.df.columns else 0,
-                "urls": int(self.df['url'].isnull().sum()) if 'url' in self.df.columns else 0
+            "source_analysis": {
+                "top_sources": stats_summary.get("source_analysis", {}).get("top_sources", {}),
+                "source_type_distribution": stats_summary.get("source_analysis", {}).get("source_type_distribution", {}),
+                "source_performance_metrics": {
+                    "avg_articles_per_source": float(len(self.df) / self.df['source'].nunique()),
+                    "source_concentration_index": float((self.df['source'].value_counts().head(5).sum() / len(self.df)) * 100)
+                }
             },
-            "duplicates": {
-                "total_duplicates": int(self.df.duplicated().sum()),
-                "url_duplicates": int(self.df['url'].duplicated().sum()) if 'url' in self.df.columns else 0
-            }
+            "content_analysis": stats_summary.get("content_analysis", {}),
+            "temporal_analysis": temporal_trends,
+            "quality_analysis": self.statistics.data_quality_check()
         }
-        
-        analysis["quality_analysis"] = quality_metrics
         
         return analysis
     
@@ -497,6 +437,17 @@ class ReportGenerator:
         print("Loading visualization images...")
         visualization_images = self.load_visualization_images()
         
+        # Prepare top_sources data in the format expected by the template
+        top_sources_data = {}
+        source_counts = self.df['source'].value_counts().head(REPORT_SETTINGS['max_top_sources'])
+        source_types = self.df.groupby('source')['source_type'].first()
+        
+        for source in source_counts.index:
+            top_sources_data[source] = {
+                'article_count': int(source_counts[source]),
+                'source_type': str(source_types.get(source, 'Unknown'))
+            }
+        
         # Prepare template data
         template_data = {
             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -505,7 +456,7 @@ class ReportGenerator:
             "recommendations": executive_summary["recommendations"],
             "performance_metrics": executive_summary["performance_metrics"],
             "source_types": executive_summary["overview"]["source_types"],
-            "top_sources": dict(list(detailed_analysis["source_analysis"]["top_sources"].items())[:REPORT_SETTINGS['max_top_sources']]),
+            "top_sources": top_sources_data,
             "data_quality_issues": data_quality_issues,
             # Add visualization images
             **visualization_images
@@ -522,12 +473,13 @@ class ReportGenerator:
         print(f"HTML report generated: {output_path}")
         return output_path
     
-    def generate_comprehensive_report(self, output_dir: str = "data_output/reports") -> Dict[str, str]:
+    def generate_comprehensive_report(self, output_dir: str = "data_output/reports", processed_dir: str = "data_output/processed") -> Dict[str, str]:
         """Generate comprehensive report in multiple formats with visualizations."""
         if self.df is None:
             return {"error": "No data loaded"}
         
         os.makedirs(output_dir, exist_ok=True)
+        os.makedirs(processed_dir, exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         
         generated_files = {}
@@ -545,12 +497,15 @@ class ReportGenerator:
             print(f"Found {len(data_quality_issues)} data quality issues")
         
         print("Exporting to Excel...")
-        excel_path = self.export_to_excel(f"{output_dir}/comprehensive_report_{timestamp}.xlsx")
+        excel_path = self.export_to_excel(f"{processed_dir}/comprehensive_report_{timestamp}.xlsx")
         generated_files["excel"] = excel_path
         
         print("Exporting to CSV...")
-        csv_files = self.export_to_csv(output_dir)
+        csv_files = self.export_to_csv(processed_dir)
         generated_files["csv"] = csv_files
+        
+        print("Generating statistical visualizations...")
+        self.statistics.generate_visualizations(processed_dir)
         
         print("Generating enhanced HTML report with visualizations...")
         html_path = self.generate_html_report(f"{output_dir}/comprehensive_report_{timestamp}.html")
@@ -565,7 +520,7 @@ class ReportGenerator:
             "visualization_images_loaded": list(self.load_visualization_images().keys())
         }
         
-        json_path = f"{output_dir}/comprehensive_report_{timestamp}.json"
+        json_path = f"{processed_dir}/comprehensive_report_{timestamp}.json"
         with open(json_path, 'w') as f:
             json.dump(json_report, f, indent=2, default=str)
         generated_files["json"] = json_path
