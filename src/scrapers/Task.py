@@ -1,7 +1,7 @@
 import time
 from dataclasses import dataclass, field
 from typing import List, Dict, Any, Optional
-from ..data.models import ScrapingTask as ModelScrapingTask
+from src.data.models import ScrapingTask as ModelScrapingTask
 
 class Task:
     def __init__(self,id,priority,url,type,search_word=None):

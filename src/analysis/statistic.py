@@ -79,8 +79,9 @@ class DataStatistics:
         quality_report["duplicates"]["percentage"] = float(duplicate_counts/len(self.df)*100)
         
         # Check URL duplicates specifically
-        url_duplicates = self.df['url'].duplicated().sum()
-        quality_report["duplicates"]["url_duplicates"] = int(url_duplicates)
+        if 'url' in self.df.columns:
+            url_duplicates = self.df['url'].duplicated().sum()
+            quality_report["duplicates"]["url_duplicates"] = int(url_duplicates)
         
         # Data types
         quality_report["data_types"] = self.df.dtypes.astype(str).to_dict()
@@ -132,7 +133,8 @@ class DataStatistics:
         # Basic statistics
         summary["basic_stats"]["total_articles"] = len(self.df)
         summary["basic_stats"]["unique_sources"] = self.df['source'].nunique()
-        summary["basic_stats"]["unique_authors"] = self.df['author'].nunique()
+        if 'author' in self.df.columns:
+            summary["basic_stats"]["unique_authors"] = self.df['author'].nunique()
         
         # Source analysis
         source_counts = self.df['source'].value_counts()
@@ -201,16 +203,14 @@ class DataStatistics:
         # Source distribution
         source_dist = self.df['source'].value_counts()
         distributions["source_distribution"] = {
-            "top_10": source_dist.head(10).to_dict(),
             "total_sources": len(source_dist),
-            "concentration": float(source_dist.head(5).sum() / len(self.df) * 100)  # Top 5 sources percentage
+            "concentration": float(source_dist.head(10).sum() / len(self.df) * 100)
         }
         
         # Author distribution
         if 'author' in self.df.columns:
             author_dist = self.df['author'].value_counts()
             distributions["author_distribution"] = {
-                "top_10": author_dist.head(10).to_dict(),
                 "total_authors": len(author_dist),
                 "concentration": float(author_dist.head(10).sum() / len(self.df) * 100)
             }
