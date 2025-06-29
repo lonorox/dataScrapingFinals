@@ -14,7 +14,7 @@ from src.utils.logger import log
 class DataOutputManager:
     """Manages data output operations with append functionality."""
     
-    def __init__(self, output_dir: str = "data_output"):
+    def __init__(self, output_dir: str = "data_output/raw"):
         """Initialize the data output manager."""
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
@@ -123,7 +123,7 @@ class DataOutputManager:
     def save_summary_csv(self, results: List[Any], filename: str = "summary.csv") -> bool:
         """Save summary data to CSV with append functionality."""
         try:
-            filepath = self.output_dir / filename
+            filepath = self.output_dir/  filename
             
             # Prepare summary data
             summary_data = []
@@ -179,11 +179,14 @@ class DataOutputManager:
         except Exception as e:
             log.info(f"Error during cleanup: {e}")
     
+    def save_articles_json(self, filename: str, data: List[Dict[str, Any]]) -> bool:
+        """Save articles to a JSON file (wrapper for append_to_json)."""
+        return self.append_to_json(filename, data)
 
 # Global instance for easy access
 data_output_manager = DataOutputManager()
 
-def consolidate_worker_data(output_dir: str = "data_output") -> Dict[str, List[Dict[str, Any]]]:
+def consolidate_worker_data(output_dir: str = "data_output/raw") -> Dict[str, List[Dict[str, Any]]]:
     """
     Consolidate all worker JSON files by source type.
     
@@ -236,7 +239,7 @@ def consolidate_worker_data(output_dir: str = "data_output") -> Dict[str, List[D
     return consolidated_data
 
 def save_consolidated_data(consolidated_data: Dict[str, List[Dict[str, Any]]], 
-                          output_dir: str = "data_output") -> bool:
+                          output_dir: str = "data_output/raw") -> bool:
     """
     Save consolidated data to type-specific JSON files and combined CSV.
     
@@ -276,7 +279,7 @@ def save_consolidated_data(consolidated_data: Dict[str, List[Dict[str, Any]]],
         log.error(f"Error saving consolidated data: {e}")
         return False
 
-def cleanup_worker_files(output_dir: str = "data_output") -> bool:
+def cleanup_worker_files(output_dir: str = "data_output/raw") -> bool:
     """
     Delete worker files after consolidation.
     
