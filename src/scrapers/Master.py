@@ -110,8 +110,6 @@ class Master:
                 continue
         
         # Export combined results only after ALL tasks are completed
-        self.export_combined_results()
-        
         # progress report for task 10
         self.save_summary_to_csv()
 
@@ -195,12 +193,15 @@ class Master:
             self.stats.failed_scrapes = sum(1 for r in self.results if not r.success)
             self.stats.total_errors = sum(len(r.errors) if hasattr(r, 'errors') else 0 for r in self.results)
             
+            # Export combined results before stopping workers
+            self.export_combined_results()
+            
             # Save session stats
             # session_id = f"session_{int(time.time())}"
             # self.db_manager.(session_id, self.stats)
             
             # Export final results
-            self.export_final_results()
+            # self.export_final_results()
             
             return self.results
         finally:

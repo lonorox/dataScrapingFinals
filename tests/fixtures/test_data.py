@@ -72,13 +72,10 @@ SAMPLE_ARTICLES = [
         "publication_date_datetime": datetime.now().isoformat(),
         "publication_date_readable": "2024-01-01",
         "summary": "This is a test article summary",
-        "content": "This is the full content of the test article",
         "tags": ["test", "technology"],
         "source_type": "blog",
         "source": "Example Blog",
         "headline": "Test Article 1",
-        "link": "https://example.com/article1",
-        "href": "https://example.com/article1",
         "scraped_at": datetime.now().isoformat(),
         "metadata": {"test": True}
     },
@@ -89,13 +86,10 @@ SAMPLE_ARTICLES = [
         "publication_date_datetime": datetime.now().isoformat(),
         "publication_date_readable": "2024-01-02",
         "summary": "Another test article summary",
-        "content": "Another test article content",
         "tags": ["test", "news"],
         "source_type": "news",
         "source": "Example News",
         "headline": "Test Article 2",
-        "link": "https://example.com/article2",
-        "href": "https://example.com/article2",
         "scraped_at": datetime.now().isoformat(),
         "metadata": {"test": True}
     }
@@ -208,19 +202,19 @@ def create_temp_data_files(temp_dir: str) -> List[str]:
     files = []
     
     # Create blog data file
-    blog_file = os.path.join(temp_dir, "blog_data_test.json")
+    blog_file = os.path.join(temp_dir, "blog_data.json")
     with open(blog_file, 'w') as f:
         json.dump(SAMPLE_ARTICLES[:1], f, indent=2)
     files.append(blog_file)
     
     # Create news data file
-    news_file = os.path.join(temp_dir, "news_data_test.json")
+    news_file = os.path.join(temp_dir, "news_data.json")
     with open(news_file, 'w') as f:
         json.dump(SAMPLE_ARTICLES[1:], f, indent=2)
     files.append(news_file)
     
     # Create RSS data file
-    rss_file = os.path.join(temp_dir, "rss_data_test.json")
+    rss_file = os.path.join(temp_dir, "rss_data.json")
     with open(rss_file, 'w') as f:
         json.dump(SAMPLE_ARTICLES, f, indent=2)
     files.append(rss_file)

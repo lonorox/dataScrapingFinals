@@ -60,13 +60,9 @@ class TestDataProcessingPipeline(unittest.TestCase):
                 publication_date_datetime=article_data["publication_date_datetime"],
                 publication_date_readable=article_data["publication_date_readable"],
                 summary=article_data["summary"],
-                content=article_data["content"],
                 tags=article_data["tags"],
                 source_type=article_data["source_type"],
                 source=article_data["source"],
-                headline=article_data["headline"],
-                link=article_data["link"],
-                href=article_data["href"],
                 scraped_at=article_data["scraped_at"],
                 metadata=article_data["metadata"]
             )

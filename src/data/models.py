@@ -17,11 +17,6 @@ class Article:
     publication_date_datetime: Optional[datetime] = None
     publication_date_readable: Optional[str] = None
     summary: Optional[str] = None
-    content: Optional[str] = None
-    headline: Optional[str] = None
-    link: Optional[str] = None
-    href: Optional[str] = None
-
     # Metadata
     tags: List[str] = field(default_factory=list)
     source_type: str = "unknown"  # blog, rss, news
@@ -71,10 +66,6 @@ class Article:
             'publication_date_datetime': self.publication_date_datetime.isoformat() if self.publication_date_datetime else None,
             'publication_date_readable': self.publication_date_readable,
             'summary': self.summary,
-            'content': self.content,
-            'headline': self.headline,
-            'link': self.link,
-            'href': self.href,
             'tags': self.tags,
             'source_type': self.source_type,
             'source': self.source,
