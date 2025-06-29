@@ -72,13 +72,10 @@ SAMPLE_ARTICLES = [
         "publication_date_datetime": datetime.now().isoformat(),
         "publication_date_readable": "2024-01-01",
         "summary": "This is a test article summary",
-        "content": "This is the full content of the test article",
         "tags": ["test", "technology"],
         "source_type": "blog",
         "source": "Example Blog",
         "headline": "Test Article 1",
-        "link": "https://example.com/article1",
-        "href": "https://example.com/article1",
         "scraped_at": datetime.now().isoformat(),
         "metadata": {"test": True}
     },
@@ -89,13 +86,10 @@ SAMPLE_ARTICLES = [
         "publication_date_datetime": datetime.now().isoformat(),
         "publication_date_readable": "2024-01-02",
         "summary": "Another test article summary",
-        "content": "Another test article content",
         "tags": ["test", "news"],
         "source_type": "news",
         "source": "Example News",
         "headline": "Test Article 2",
-        "link": "https://example.com/article2",
-        "href": "https://example.com/article2",
         "scraped_at": datetime.now().isoformat(),
         "metadata": {"test": True}
     }

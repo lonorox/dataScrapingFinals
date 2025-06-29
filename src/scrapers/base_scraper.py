@@ -15,5 +15,4 @@ if __name__ == '__main__':
     tasks = [Task(i,tasks[i]["priority"],tasks[i]["url"],tasks[i]["type"],tasks[i].get("search_word")) for i in range(len(tasks))]
     master = Master(task_queue=task_queue, result_queue=result_queue, worker_status=worker_status)
     master.run(tasks)
-    master.export_combined_results()
 

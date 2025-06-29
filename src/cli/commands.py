@@ -32,6 +32,7 @@ class WebScrapingCommands:
     def run_all_tasks(self):
         """Run all configured tasks"""
         print("\n🚀 Starting all scraping tasks...")
+        master = None
         try:
             # Create multiprocessing objects
             task_queue = Queue()
@@ -53,13 +54,13 @@ class WebScrapingCommands:
             print("⏳ Starting workers...")
 
             master.run(tasks)
-            master.export_combined_results()
             print("✅ Scraping completed successfully!")
             self.show_completion_summary()
 
         except Exception as e:
             print(f"❌ Error during scraping: {e}")
             log.error(f"Scraping error: {e}")
+
 
     def run_news_only(self):
         """Run only news scraping tasks"""
@@ -78,6 +79,7 @@ class WebScrapingCommands:
 
     def run_filtered_tasks(self, task_type):
         """Run tasks filtered by type"""
+        master = None
         try:
             tasks = generate_tasks()
             filtered_tasks = []
@@ -104,7 +106,6 @@ class WebScrapingCommands:
                             worker_status=worker_status)
 
             master.run(filtered_tasks)
-            master.export_combined_results()
             print(f"✅ {task_type.capitalize()} scraping completed!")
             self.show_completion_summary()
 
@@ -112,10 +113,12 @@ class WebScrapingCommands:
             print(f"❌ Error during {task_type} scraping: {e}")
             log.error(f"{task_type} scraping error: {e}")
 
+
     def run_custom_selection(self):
         """Run custom task selection"""
         print("\n🎯 Custom Task Selection")
         tasks = generate_tasks()
+        master = None
 
         print("\nAvailable tasks:")
         for i, task in enumerate(tasks):
@@ -155,6 +158,10 @@ class WebScrapingCommands:
 
         except (ValueError, IndexError) as e:
             print(f"❌ Invalid selection: {e}")
+        finally:
+            # Ensure proper cleanup
+            if master is not None:
+                master.cleanup()
 
     def edit_tasks(self):
         """Edit task configuration"""
@@ -200,26 +207,57 @@ class WebScrapingCommands:
             return
 
         # todo: modify for different types
-        url = input("URL: ").strip()
-        if not url.startswith(('http://', 'https://')):
-            print("❌ Invalid URL.")
-            return
+        if task_type == "news":
+            webiste = input("chose a website (fox/bbc): ").strip()
 
-        try:
-            priority = int(input("Priority (1-10): ").strip())
-            if not 1 <= priority <= 10:
-                print("❌ Priority must be between 1 and 10.")
+            if webiste == "fox":
+                url = "https://www.foxnews.com/"
+            else:
+                url = "https://www.bbc.com/"
+            try:
+                priority = int(input("Priority (1-10): ").strip())
+                if not 1 <= priority <= 10:
+                    print("❌ Priority must be between 1 and 10.")
+                    return
+            except ValueError:
+                print("❌ Invalid priority.")
                 return
-        except ValueError:
-            print("❌ Invalid priority.")
-            return
 
-        new_task = {
-            "priority": priority,
-            "url": url,
-            "type": task_type
-        }
-
+            new_task = {
+                "priority": priority,
+                "url": url,
+                "type": task_type
+            }
+        elif task_type == "rss":
+            searchword = input("type a search keyword: ")
+            try:
+                priority = int(input("Priority (1-10): ").strip())
+                if not 1 <= priority <= 10:
+                    print("❌ Priority must be between 1 and 10.")
+                    return
+            except ValueError:
+                print("❌ Invalid priority.")
+                return
+            new_task = {
+                "priority": priority,
+                "url": "",
+                "type": task_type,
+                "search_word": searchword
+            }
+        else:
+            try:
+                priority = int(input("Priority (1-10): ").strip())
+                if not 1 <= priority <= 10:
+                    print("❌ Priority must be between 1 and 10.")
+                    return
+            except ValueError:
+                print("❌ Invalid priority.")
+                return
+            new_task = {
+                "priority": priority,
+                "url": "",
+                "type": task_type,
+            }
         config["tasks"].append(new_task)
 
         with open(self.config_file, 'w') as f:

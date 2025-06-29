@@ -27,8 +27,14 @@ class Database:
     
     def close(self):
         """Close database connection."""
-        if self.connection:
-            self.connection.close()
+        try:
+            if self.connection:
+                self.connection.close()
+                self.connection = None
+        except Exception as e:
+            # Handle threading-related errors gracefully
+            # This can happen when the connection was created in a different thread
+            print(f"Warning: Could not close database connection: {e}")
             self.connection = None
     
     def create_table(self):
@@ -86,12 +92,12 @@ class Database:
                         try:
                             # Insert row into database
                             cursor.execute('''
-                                INSERT OR REPLACE INTO articles (
+                                INSERT OR IGNORE INTO articles (
                                     title, url, author, publication_date_datetime,
-                                    publication_date_readable, summary, content, tags,
-                                    source_type, source, headline, link, href,
-                                    scraped_at, metadata, worker_id, task_id
-                                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                                    publication_date_readable, summary, tags,
+                                    source_type, source, scraped_at, metadata,
+                                    worker_id, task_id
+                                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                             ''', (
                                 row.get('title'),
                                 row.get('url'),
