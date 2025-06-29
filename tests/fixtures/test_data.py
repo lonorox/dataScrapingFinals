@@ -208,19 +208,19 @@ def create_temp_data_files(temp_dir: str) -> List[str]:
     files = []
     
     # Create blog data file
-    blog_file = os.path.join(temp_dir, "blog_data.json")
+    blog_file = os.path.join(temp_dir, "blog_data_test.json")
     with open(blog_file, 'w') as f:
         json.dump(SAMPLE_ARTICLES[:1], f, indent=2)
     files.append(blog_file)
     
     # Create news data file
-    news_file = os.path.join(temp_dir, "news_data.json")
+    news_file = os.path.join(temp_dir, "news_data_test.json")
     with open(news_file, 'w') as f:
         json.dump(SAMPLE_ARTICLES[1:], f, indent=2)
     files.append(news_file)
     
     # Create RSS data file
-    rss_file = os.path.join(temp_dir, "rss_data.json")
+    rss_file = os.path.join(temp_dir, "rss_data_test.json")
     with open(rss_file, 'w') as f:
         json.dump(SAMPLE_ARTICLES, f, indent=2)
     files.append(rss_file)

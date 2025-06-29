@@ -433,6 +433,19 @@ class WebScrapingCommands:
         except Exception as e:
             print(f"❌ Error reading performance data: {e}")
 
+    def run_all_tests(self):
+        try:
+            import pytest
+            print("Running all tests with pytest...\n")
+            pytest.main(["-v", "tests/"])
+        except ImportError:
+            print("pytest not installed, falling back to unittest discovery...\n")
+            import unittest
+            loader = unittest.TestLoader()
+            suite = loader.discover('tests')
+            runner = unittest.TextTestRunner(verbosity=2)
+            result = runner.run(suite)
+            sys.exit(not result.wasSuccessful())
     def task_summary(self):
         """Show task summary"""
         print("\n📋 Task Summary")
@@ -670,11 +683,9 @@ class WebScrapingCommands:
         except Exception as e:
             print(f"❌ Error reading tasks: {e}")
 
-    def schedule_scraping(self):
-        """Schedule scraping tasks"""
-        print("\n🎯 Schedule Scraping")
-        print("⚠️  Scheduling feature not yet implemented.")
-        print("You can use cron jobs or system schedulers to run the CLI automatically.")
+    # def schedule_scraping(self):
+    #     """Schedule scraping tasks"""
+    #     print("\n🎯 Schedule Scraping")
 
     def show_completion_summary(self):
         """Show completion summary"""
