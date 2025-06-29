@@ -352,19 +352,6 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
-### Adding New Scrapers
-1. Create new scraper class implementing `Scraper` interface
-2. Add to `ScraperFactory.create_scraper()` method
-3. Update configuration schema if needed
-4. Add tests for new scraper
-
-### Adding New Data Sources
-1. Implement site-specific strategy
-2. Add to `ScrapingContext` strategies
-3. Update URL validation logic
-4. Test with sample data
-
-
 ##  Acknowledgments
 
 - Built with Python 3.8+
@@ -382,5 +369,3 @@ logging.basicConfig(level=logging.DEBUG)
 - **System Status**: Use CLI to check system health
 
 ---
-
-**Happy Scraping! 🕷️📊** 
