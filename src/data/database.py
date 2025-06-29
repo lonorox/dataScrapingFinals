@@ -12,7 +12,7 @@ from typing import List, Dict, Any
 class Database:
     """Converts combined.csv to SQLite database."""
     
-    def __init__(self, csv_path: str = "data_output/combined.csv", db_path: str = "data_output/scraped_articles.db"):
+    def __init__(self, csv_path: str = "data_output/raw/combined.csv", db_path: str = "data_output/raw/scraped_articles.db"):
         """Initialize converter with CSV and database paths."""
         self.csv_path = csv_path
         self.db_path = db_path
@@ -45,13 +45,9 @@ class Database:
                     publication_date_datetime TEXT,
                     publication_date_readable TEXT,
                     summary TEXT,
-                    content TEXT,
                     tags TEXT,
                     source_type TEXT,
                     source TEXT,
-                    headline TEXT,
-                    link TEXT,
-                    href TEXT,
                     scraped_at TEXT,
                     metadata TEXT,
                     worker_id INTEGER,
@@ -103,13 +99,9 @@ class Database:
                                 row.get('publication_date_datetime'),
                                 row.get('publication_date_readable'),
                                 row.get('summary'),
-                                row.get('content'),
                                 row.get('tags'),
                                 row.get('source_type'),
                                 row.get('source'),
-                                row.get('headline'),
-                                row.get('link'),
-                                row.get('href'),
                                 row.get('scraped_at'),
                                 row.get('metadata'),
                                 int(row.get('worker_id', 0)) if row.get('worker_id') else 0,
