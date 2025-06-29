@@ -1,8 +1,8 @@
 # Web Scraping System
 
-A powerful, scalable web scraping system built with Python that supports multiple data sources including news sites, RSS feeds, and blogs. The system uses a Master-Worker architecture with multiprocessing for efficient concurrent scraping operations.
+A web scraping system that supports multiple data sources including news sites, RSS feeds, and blogs. The system uses a Master-Worker architecture with multiprocessing for efficient concurrent scraping operations.
 
-## 🌟 Features
+## Features
 
 - **Multi-Source Scraping**: Support for news sites, RSS feeds, and blogs
 - **Scalable Architecture**: Master-Worker pattern with configurable worker pools
@@ -73,7 +73,7 @@ A powerful, scalable web scraping system built with Python that supports multipl
    python main.py --report
    ```
 
-## 📊 Supported Data Sources
+##  Supported Data Sources
 
 ### News Sources
 - **BBC News** (`bbc.com`) - Latest news articles with categories
@@ -194,7 +194,7 @@ The system is configured via `config.json`:
 - **Network**: User agent rotation and proxy support
 - **Rate Limiting**: Request throttling settings
 
-## 📈 Usage Examples
+## Usage Examples
 
 ### Interactive Mode
 ```bash
@@ -352,14 +352,6 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ### Adding New Scrapers
 1. Create new scraper class implementing `Scraper` interface
 2. Add to `ScraperFactory.create_scraper()` method
@@ -372,11 +364,8 @@ logging.basicConfig(level=logging.DEBUG)
 3. Update URL validation logic
 4. Test with sample data
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Built with Python 3.8+
 - Uses BeautifulSoup for HTML parsing
@@ -385,7 +374,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - SQLite for data storage
 - Matplotlib and Seaborn for visualizations
 
-## 📞 Support
+##  Support
 
 - **Documentation**: Check the [docs/](docs/) directory
 - **Issues**: Report bugs and feature requests
