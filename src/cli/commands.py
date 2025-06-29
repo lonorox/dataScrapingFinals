@@ -25,7 +25,7 @@ from multiprocessing import Queue, Manager
 
 
 class WebScrapingCommands:
-    def __init__(self, config_file="config.json", results_dir="data_output"):
+    def __init__(self, config_file="config.json", results_dir="data_output/raw"):
         self.config_file = config_file
         self.results_dir = results_dir
 
@@ -53,7 +53,7 @@ class WebScrapingCommands:
             print("⏳ Starting workers...")
 
             master.run(tasks)
-
+            master.export_combined_results()
             print("✅ Scraping completed successfully!")
             self.show_completion_summary()
 
@@ -104,7 +104,7 @@ class WebScrapingCommands:
                             worker_status=worker_status)
 
             master.run(filtered_tasks)
-
+            master.export_combined_results()
             print(f"✅ {task_type.capitalize()} scraping completed!")
             self.show_completion_summary()
 
@@ -460,226 +460,17 @@ class WebScrapingCommands:
         except Exception as e:
             print(f"❌ Error reading task summary: {e}")
 
-    def data_visualization(self):
-        """Create data visualizations"""
-        print("\n🎯 Data Visualization")
-
-        if not os.path.exists(self.results_dir):
-            print("❌ No data directory found.")
-            return
-
-        # Create visualizations directory
-        viz_dir = "visualizations"
-        os.makedirs(viz_dir, exist_ok=True)
-
-        try:
-            # Load data
-            data_files = [f for f in os.listdir(self.results_dir) if f.endswith('_data.json')]
-
-            if not data_files:
-                print("❌ No data files found for visualization.")
-                return
-
-            # Create summary plot
-            plt.figure(figsize=(12, 8))
-
-            # Data volume by type
-            data_volumes = {}
-            for file in data_files:
-                file_path = os.path.join(self.results_dir, file)
-                with open(file_path, 'r') as f:
-                    data = json.load(f)
-                    if isinstance(data, list):
-                        data_type = file.replace('_data.json', '')
-                        data_volumes[data_type] = len(data)
-
-            if data_volumes:
-                plt.subplot(2, 2, 1)
-                plt.bar(data_volumes.keys(), data_volumes.values())
-                plt.title('Data Volume by Type')
-                plt.ylabel('Number of Items')
-                plt.xticks(rotation=45)
-
-            # Performance data if available
-            summary_file = os.path.join(self.results_dir, "summary.csv")
-            if os.path.exists(summary_file):
-                df = pd.read_csv(summary_file)
-                task_data = df[df['task_id'].notna()]
-
-                if not task_data.empty:
-                    plt.subplot(2, 2, 2)
-                    plt.bar(task_data['task_id'], task_data['processing_time'])
-                    plt.title('Processing Time by Task')
-                    plt.xlabel('Task ID')
-                    plt.ylabel('Processing Time (seconds)')
-
-            # Save plot
-            plt.tight_layout()
-            plot_file = os.path.join(viz_dir, f"scraping_analysis_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
-            plt.savefig(plot_file, dpi=300, bbox_inches='tight')
-            plt.close()
-
-            print(f"✅ Visualization saved: {plot_file}")
-
-        except Exception as e:
-            print(f"❌ Error creating visualization: {e}")
-
     def generate_html_report(self):
-        """Generate HTML report"""
-        print("generating report")
-
-    #         print("\n📄 Generating HTML Report")
-    #
-    #         if not os.path.exists(self.results_dir):
-    #             print("❌ No data directory found.")
-    #             return
-    #
-    #         try:
-    #             # Create reports directory
-    #             reports_dir = "data_output/reports"
-    #             os.makedirs(reports_dir, exist_ok=True)
-    #
-    #             # Generate HTML content
-    #             html_content = self.generate_html_content()
-    #
-    #             # Save HTML file
-    #             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    #             html_file = os.path.join(reports_dir, f"scraping_report_{timestamp}.html")
-    #
-    #             with open(html_file, 'w') as f:
-    #                 f.write(html_content)
-    #
-    #             print(f"✅ HTML report generated: {html_file}")
-    #
-    #         except Exception as e:
-    #             print(f"❌ Error generating HTML report: {e}")
-    #
-    #     def generate_html_content(self):
-    #         """Generate HTML content for the report"""
-    #         html = """
-    # <!DOCTYPE html>
-    # <html lang="en">
-    # <head>
-    #     <meta charset="UTF-8">
-    #     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    #     <title>Web Scraping Report</title>
-    #     <style>
-    #         body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
-    #         .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    #         h1 { color: #333; text-align: center; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
-    #         h2 { color: #007bff; margin-top: 30px; }
-    #         .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
-    #         .stat-card { background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border-left: 4px solid #007bff; }
-    #         .stat-number { font-size: 2em; font-weight: bold; color: #007bff; }
-    #         .stat-label { color: #666; margin-top: 5px; }
-    #         table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-    #         th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
-    #         th { background-color: #007bff; color: white; }
-    #         tr:nth-child(even) { background-color: #f2f2f2; }
-    #         .timestamp { text-align: center; color: #666; margin-top: 20px; }
-    #     </style>
-    # </head>
-    # <body>
-    #     <div class="container">
-    #         <h1>🌐 Web Scraping Report</h1>
-    #         <div class="timestamp">Generated on: """ + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + """</div>
-    # """
-    #
-    #         # Add statistics
-    #         data_files = [f for f in os.listdir(self.results_dir) if f.endswith('_data.json')]
-    #         total_items = 0
-    #         data_volumes = {}
-    #
-    #         for file in data_files:
-    #             file_path = os.path.join(self.results_dir, file)
-    #             try:
-    #                 with open(file_path, 'r') as f:
-    #                     data = json.load(f)
-    #                     if isinstance(data, list):
-    #                         count = len(data)
-    #                         data_type = file.replace('_data.json', '')
-    #                         data_volumes[data_type] = count
-    #                         total_items += count
-    #             except:
-    #                 pass
-    #
-    #         html += f"""
-    #         <h2>📊 Summary Statistics</h2>
-    #         <div class="stats">
-    #             <div class="stat-card">
-    #                 <div class="stat-number">{len(data_files)}</div>
-    #                 <div class="stat-label">Data Files</div>
-    #             </div>
-    #             <div class="stat-card">
-    #                 <div class="stat-number">{total_items}</div>
-    #                 <div class="stat-label">Total Items</div>
-    #             </div>
-    #             <div class="stat-card">
-    #                 <div class="stat-number">{len(data_volumes)}</div>
-    #                 <div class="stat-label">Data Types</div>
-    #             </div>
-    #         </div>
-    #
-    #         <h2>📈 Data Volume by Type</h2>
-    #         <table>
-    #             <tr>
-    #                 <th>Data Type</th>
-    #                 <th>Number of Items</th>
-    #             </tr>
-    # """
-    #
-    #         for data_type, count in data_volumes.items():
-    #             html += f"""
-    #             <tr>
-    #                 <td>{data_type.upper()}</td>
-    #                 <td>{count}</td>
-    #             </tr>
-    # """
-    #
-    #         html += """
-    #         </table>
-    #
-    #         <h2>⚙️ Configuration</h2>
-    # """
-    #
-    #         # Add configuration info
-    #         try:
-    #             with open(self.config_file, 'r') as f:
-    #                 config = json.load(f)
-    #
-    #             html += f"""
-    #         <table>
-    #             <tr>
-    #                 <th>Setting</th>
-    #                 <th>Value</th>
-    #             </tr>
-    #             <tr>
-    #                 <td>Min Workers</td>
-    #                 <td>{config.get('min_workers', 'N/A')}</td>
-    #             </tr>
-    #             <tr>
-    #                 <td>Max Workers</td>
-    #                 <td>{config.get('max_workers', 'N/A')}</td>
-    #             </tr>
-    #             <tr>
-    #                 <td>Total Tasks</td>
-    #                 <td>{len(config.get('tasks', []))}</td>
-    #             </tr>
-    #             <tr>
-    #                 <td>Proxies</td>
-    #                 <td>{len(config.get('proxies', []))}</td>
-    #             </tr>
-    #         </table>
-    # """
-    #         except:
-    #             html += "<p>❌ Could not load configuration</p>"
-    #
-    #         html += """
-    #     </div>
-    # </body>
-    # </html>
-    # """
-    #         return html
+        from src.analysis.reports import ReportGenerator
+        reporter = ReportGenerator()
+        if reporter.load_data():
+            files = reporter.generate_comprehensive_report()
+            reporter.close_connection()
+            print("Analysis pipeline completed!")
+            return files
+        else:
+            print("Pipeline failed: Could not load data")
+            return None
 
     def list_data_files(self):
         """List all data files"""

@@ -33,8 +33,8 @@ from src.analysis.constants import HTML_REPORT_TEMPLATE, VISUALIZATION_IMAGES, A
 class ReportGenerator:
     """Generate comprehensive reports with insights and data export."""
     
-    def __init__(self, data_path: str = "data_output",
-                 db_path: str = "data_output/scraped_articles.db"):
+    def __init__(self, data_path: str = "data_output/raw",
+                 db_path: str = "data_output/raw/scraped_articles.db"):
         """Initialize with data paths."""
         self.data_path = data_path
         self.db_path = db_path
