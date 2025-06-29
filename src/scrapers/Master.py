@@ -156,7 +156,7 @@ class Master:
         """Clean up individual worker files after combining"""
         try:
             # Use the new cleanup function from processors
-            success = cleanup_worker_files("data_output")
+            success = cleanup_worker_files("data_output/raw")
             if success:
                 log.info("Successfully cleaned up worker files")
             else:
@@ -228,15 +228,15 @@ class Master:
         
         try:
             # Consolidate all worker files by type
-            consolidated_data = consolidate_worker_data("data_output")
+            consolidated_data = consolidate_worker_data("data_output/raw")
             
             # Save consolidated data to type-specific JSON files and combined CSV
-            success = save_consolidated_data(consolidated_data, "data_output")
+            success = save_consolidated_data(consolidated_data, "data_output/raw")
             self.db_manager.convert_csv_to_sqlite()
             if success:
                 log.info("Successfully exported consolidated data")
                 # Clean up worker files after successful consolidation
-                cleanup_worker_files("data_output")
+                cleanup_worker_files("data_output/raw")
             else:
                 log.error("Failed to export consolidated data")
                 
@@ -283,7 +283,7 @@ class Master:
                 
                 # Export to CSV
                 data_output_manager.append_to_csv("final_combined.csv", articles_data)
-                self.db_manager.convert_csv_to_sqlite("data_output/final_combined.csv")
+                self.db_manager.convert_csv_to_sqlite("data_output/raw/final_combined.csv")
 
                 # Export database stats
                 db_stats = self.db_manager.get_stats()

@@ -30,7 +30,7 @@ from .commands import WebScrapingCommands
 class WebScrapingCLI:
     def __init__(self):
         self.config_file = "config.json"
-        self.results_dir = "data_output"
+        self.results_dir = "data_output/raw"
         self.commands = WebScrapingCommands(self.config_file, self.results_dir)
 
     def main_menu(self):
@@ -48,7 +48,7 @@ class WebScrapingCLI:
             print("7. ❌ Exit")
             print("=" * 50)
 
-            choice = input("Select an option (1-8): ").strip()
+            choice = input("Select an option (1-7): ").strip()
 
             if choice == '1':
                 self.start_scraping_menu()
@@ -131,11 +131,10 @@ class WebScrapingCLI:
         print("1. 📈 Data Overview")
         print("2. 📊 Performance Analytics")
         print("3. 📋 Task Summary")
-        print("4. 🎯 Data Visualization")
-        print("5. 📄 Generate HTML Report")
-        print("6. ⬅️  Back to Main Menu")
+        print("4. 📄 Generate HTML Report")
+        print("5. ⬅️  Back to Main Menu")
 
-        choice = input("Select option (1-6): ").strip()
+        choice = input("Select option (1-5): ").strip()
 
         if choice == '1':
             self.commands.data_overview()
@@ -144,10 +143,8 @@ class WebScrapingCLI:
         elif choice == '3':
             self.commands.task_summary()
         elif choice == '4':
-            self.commands.data_visualization()
-        elif choice == '5':
             self.commands.generate_html_report()
-        elif choice == '6':
+        elif choice == '5':
             return
         else:
             print("❌ Invalid option.")
