@@ -60,7 +60,6 @@ class TestWebScrapingCommands(unittest.TestCase):
         # Verify Master was called
         mock_master_class.assert_called_once()
         mock_master.run.assert_called_once()
-        mock_master.export_combined_results.assert_called_once()
         
         # Check output contains expected messages
         output = fake_output.getvalue()

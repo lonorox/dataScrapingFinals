@@ -86,12 +86,16 @@ class DataOutputManager:
             # Prepare all items with source type
             all_items = []
             for source_type, items in data_by_type.items():
+                log.info(f"Processing {len(items)} items for {source_type}")
                 for item in items:
                     item_copy = item.copy()
                     item_copy['source_type'] = source_type
                     all_items.append(item_copy)
             
+            log.info(f"Total items to save: {len(all_items)}")
+            
             if not all_items:
+                log.warning("No items to save to combined CSV")
                 return True
             
             # Use pandas for better CSV handling
@@ -102,22 +106,30 @@ class DataOutputManager:
                 if filepath.exists():
                     # Read existing data and append
                     df_existing = pd.read_csv(filepath)
+                    log.info(f"Existing CSV has {len(df_existing)} records")
                     df_combined = pd.concat([df_existing, df_new], ignore_index=True)
+                    log.info(f"After concatenation: {len(df_combined)} records")
                     # Remove duplicates based on URL if it exists
                     if 'url' in df_combined.columns:
+                        before_dedup = len(df_combined)
                         df_combined = df_combined.drop_duplicates(subset=['url'], keep='last')
+                        after_dedup = len(df_combined)
+                        log.info(f"Removed {before_dedup - after_dedup} duplicate URLs")
                 else:
                     df_combined = df_new
+                    log.info(f"Creating new CSV with {len(df_combined)} records")
                 
                 df_combined.to_csv(filepath, index=False)
+                log.info(f"Successfully saved {len(df_combined)} records to {filename}")
                 return True
                 
             except ImportError:
                 # Fallback to CSV writer if pandas is not available
+                log.warning("Pandas not available, using fallback CSV writer")
                 return self.append_to_csv(filename, all_items)
                 
         except Exception as e:
-            log.info(f"Error saving combined CSV: {e}")
+            log.error(f"Error saving combined CSV: {e}")
             return False
     
     def save_summary_csv(self, results: List[Any], filename: str = "summary.csv") -> bool:
@@ -205,36 +217,58 @@ def consolidate_worker_data(output_dir: str = "data_output/raw") -> Dict[str, Li
     
     # Find all worker JSON files
     worker_files = glob.glob(str(output_path / "worker_*.json"))
+    log.info(f"Found {len(worker_files)} worker files to consolidate")
     
-    for file_path in worker_files:
-        try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
+    if worker_files:
+        for file_path in worker_files:
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    
+                if not isinstance(data, list):
+                    data = [data]
                 
-            if not isinstance(data, list):
-                data = [data]
-            
-            # Group data by source_type
-            for item in data:
-                source_type = item.get('source_type', '').lower()
-                if source_type in consolidated_data:
-                    consolidated_data[source_type].append(item)
-                else:
-                    # If source_type is not recognized, try to infer from URL or other fields
-                    url = item.get('url', '').lower()
-                    if any(keyword in url for keyword in ['blog', 'medium', 'wordpress']):
-                        consolidated_data['blog'].append(item)
-                    elif any(keyword in url for keyword in ['news', 'cnn', 'bbc', 'reuters']):
-                        consolidated_data['news'].append(item)
-                    elif any(keyword in url for keyword in ['rss', 'feed', 'xml']):
-                        consolidated_data['rss'].append(item)
+                # Group data by source_type
+                for item in data:
+                    source_type = item.get('source_type', '').lower()
+                    if source_type in consolidated_data:
+                        consolidated_data[source_type].append(item)
                     else:
-                        # Default to news if can't determine
-                        consolidated_data['news'].append(item)
-                        
-        except Exception as e:
-            log.error(f"Error processing file {file_path}: {e}")
-            continue
+                        # If source_type is not recognized, try to infer from URL or other fields
+                        url = item.get('url', '').lower()
+                        if any(keyword in url for keyword in ['blog', 'medium', 'wordpress']):
+                            consolidated_data['blog'].append(item)
+                        elif any(keyword in url for keyword in ['news', 'cnn', 'bbc', 'reuters']):
+                            consolidated_data['news'].append(item)
+                        elif any(keyword in url for keyword in ['rss', 'feed', 'xml']):
+                            consolidated_data['rss'].append(item)
+                        else:
+                            # Default to news if can't determine
+                            consolidated_data['news'].append(item)
+                            
+            except Exception as e:
+                log.error(f"Error processing file {file_path}: {e}")
+                continue
+    else:
+        # Fallback: try to load from existing type-specific JSON files
+        log.info("No worker files found, attempting to load from existing type-specific files")
+        for data_type in consolidated_data.keys():
+            type_file = output_path / f"{data_type}_data.json"
+            if type_file.exists():
+                try:
+                    with open(type_file, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                    if isinstance(data, list):
+                        consolidated_data[data_type] = data
+                        log.info(f"Loaded {len(data)} items from {type_file}")
+                except Exception as e:
+                    log.error(f"Error loading {type_file}: {e}")
+    
+    # Log summary
+    total_items = sum(len(items) for items in consolidated_data.values())
+    log.info(f"Consolidated data summary: {total_items} total items")
+    for data_type, items in consolidated_data.items():
+        log.info(f"  {data_type}: {len(items)} items")
     
     return consolidated_data
 

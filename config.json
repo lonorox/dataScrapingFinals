@@ -39,6 +39,12 @@
       "priority": 1,
       "url": "https://www.foxnews.com/",
       "type": "news"
+    },
+    {
+      "priority": 1,
+      "url": "",
+      "type": "rss",
+      "search_word": "politics"
     }
   ],
   "userAgents": [

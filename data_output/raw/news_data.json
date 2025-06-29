@@ -1,0 +1,4660 @@
+[
+  {
+    "title": "mamdani's race-based tax plan for nyc neighborhoods condemned by ny post",
+    "url": "https://www.foxnews.com/media/new-york-post-editorial-slams-zohran-mamdanis-plan-taxing-whites-more-calls-pure-racism",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'sorry, zohran — we need a mayor for all new yorkers,' the new york post editorial asserted",
+    "tags": [
+      "media",
+      "new york city",
+      "state and local elections",
+      "politics",
+      "democratic party"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:15.418640",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "'leave it to beaver' star reveals what kept cast in line during iconic show's run",
+    "url": "https://www.foxnews.com/entertainment/leave-beaver-star-jerry-mathers-minister-tv-dad-kept-cast-straight-narrow",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the 77-year-old actor recently reunited with surviving co-stars at the hollywood show",
+    "tags": [
+      "then and now",
+      "classics",
+      "old hollywood",
+      "tv",
+      "sitcom",
+      "entertainment"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:15.820987",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "jake paul erupts with vulgar orders after beating boxing legend's son",
+    "url": "https://www.foxnews.com/sports/jake-paul-tells-booing-crowd-shut-f-up-beating-julio-cesar-chavez",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "boxing judges scored the cruiserweight bout 99-91, 98-92 and 97-93 for paul in his most credible boxing matchup to date",
+    "tags": [
+      "jake paul",
+      "boxing",
+      "sports"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:16.113342",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "young assemblyman topples ex-governor in shocking nyc primary upset. dems must wake up",
+    "url": "https://www.foxnews.com/opinion/cuomo-comeback-crashed-young-voters-came-like-wrecking-ball",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "in defeating ex-gov. andrew cuomo in the nyc democratic mayoral primary, zohran mamdani didn’t just win a campaign. he upended a power structure",
+    "tags": [
+      "opinion",
+      "new york city",
+      "state and local primaries",
+      "politics",
+      "democratic party",
+      "andrew cuomo"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:16.694252",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "diddy 'might be cooked' on one charge as legal battle wraps up, expert warns",
+    "url": "https://www.foxnews.com/entertainment/diddy-might-cooked-key-sex-crime-jury-prepares-deliberate-expert-says",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "testimony in sean 'diddy' combs' sex trafficking and racketeering trial began on may 12",
+    "tags": [
+      "in court",
+      "sean 'diddy' combs",
+      "entertainment",
+      "trending news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:16.950778",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "newlyweds jeff bezos and lauren sánchez bezos pack on pda before star-studded bash",
+    "url": "https://www.foxnews.com/entertainment/newlyweds-jeff-bezos-lauren-sanchez-bezos-pack-pda-ahead-star-studded-wedding-celebration",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "kylie jenner, oprah winfrey among high-profile attendees spotted in glamorous attire for the third day of festivities",
+    "tags": [
+      "entertainment",
+      "jeff bezos",
+      "celebrity couples"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:17.367892",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "sailboat erupts in flames off florida coast as witness reports 'explosions'",
+    "url": "https://www.foxnews.com/us/boat-catches-fire-near-cape-canaveral-passengers-saved",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "witness reported explosions as four people evacuated from burning 61-foot vessel",
+    "tags": [
+      "florida",
+      "southeast",
+      "us fires",
+      "boating"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:18.286353",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "russia unleashes biggest aerial attack since conflict began, ukraine says",
+    "url": "https://www.foxnews.com/world/russia-launched-largest-aerial-attack-war-ukraine-says",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the attack was 'the most massive airstrike' against ukraine since russia launched its invasion, ukraine’s air force said",
+    "tags": [
+      "russia",
+      "ukraine",
+      "world",
+      "conflicts",
+      "vladimir putin",
+      "volodymyr zelenskyy"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:18.789086",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "justice roberts issues warning to politicians who use heated rhetoric",
+    "url": "https://www.foxnews.com/politics/chief-justice-roberts-sounds-alarm-dangerous-rhetoric-aimed-judges-from-politicians",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the supreme court chief justice appeared to reference both president donald trump and sen. chuck schumer while defending judicial independence",
+    "tags": [
+      "supreme court",
+      "chuck schumer",
+      "donald trump",
+      "federal judges",
+      "politics"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:19.105894",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "tourist captures bison's final moments in yellowstone hot spring tragedy",
+    "url": "https://www.foxnews.com/us/horrified-tourists-watch-bison-boils-death-yellowstone-hot-spring",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "witness captures final moments as bison becomes trapped in nearly-boiling waters of grand prismatic spring",
+    "tags": [
+      "national parks",
+      "wild nature"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:19.672289",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "fox news readers' favorites: get early prime day deals on last year's bestsellers",
+    "url": "https://www.foxnews.com/deals/amazon-prime-day-trending-deals",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "shop early prime day deals on last year's top picks",
+    "tags": [
+      "deals",
+      "commerce",
+      "amazon deals"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:20.599238",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "scientists find alzheimer's-fighting compound in popular cooking ingredients",
+    "url": "https://www.foxnews.com/food-drink/ingredient-common-kitchen-herbs-could-target-alzheimers-dont-change-recipes",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "chemical in common herbs reduced brain inflammation, improved neuron connections in mice — holds promise for humans",
+    "tags": [
+      "food-drink",
+      "food",
+      "alzheimers",
+      "health",
+      "lifestyle",
+      "healthy foods",
+      "food",
+      "brain health",
+      "medical research",
+      "cooking basics"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:20.948860",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "american culture quiz time featuring iconic ice cream and remarkable museums",
+    "url": "https://www.foxnews.com/lifestyle/american-culture-quiz-test-yourself-iconic-ice-cream-marvelous-museums",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "test yourself — see how much you know about this week's hot topics!",
+    "tags": [
+      "quizzes",
+      "lifestyle",
+      "food-drink",
+      "entertainment",
+      "travel",
+      "history",
+      "wild nature",
+      "weddings tips & trends",
+      "dessert recipes"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:21.276018",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "the best early prime day deals: tech, home and more for less than $100",
+    "url": "https://www.foxnews.com/deals/best-deals-amazon",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "get early deals on amazon fire stick, ring doorbell, apple airtags and more",
+    "tags": [
+      "deals",
+      "commerce",
+      "amazon"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:21.448007",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "colorado funeral home owner handed maximum sentence in disturbing fraud case",
+    "url": "https://www.foxnews.com/us/colorado-funeral-home-owner-sentenced-20-years-stashing-nearly-190-decaying-bodies",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'this is not an ordinary fraud case,' judge nina wang said, adding that the details warranted the maximum sentence",
+    "tags": [
+      "colorado",
+      "us",
+      "crime",
+      "police and law enforcement",
+      "law"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:21.783085",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "'stranger things' star millie bobby brown sizzles in string bikini during getaway",
+    "url": "https://www.foxnews.com/entertainment/stranger-things-star-millie-bobby-brown-sizzles-tiny-string-bikini-during-beach-getaway",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the 21-year-old actress showed off her toned physique in a paisley blue and green two-piece with white lace trim",
+    "tags": [
+      "millie bobby brown",
+      "entertainment",
+      "movies",
+      "tv",
+      "celebrity couples"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:22.203809",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "'full house' star opens up about how god 'shows up' in unexpected ways",
+    "url": "https://www.foxnews.com/entertainment/candace-cameron-bure-unexpected-way-god-shows-up-her-scariest-moments",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the 'full house' alum shares insights from her new devotional book about finding strength in faith even during failures",
+    "tags": [
+      "entertainment",
+      "exclusive interviews",
+      "books",
+      "tv"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:22.487734",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "socialist muslim mayoral nominee's rise reveals soros-funded web in democratic party",
+    "url": "https://www.foxnews.com/opinion/asra-nomani-how-socialist-muslims-seized-democratic-party-20-year-political-campaign",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the rise of zohran mamdani is the product of a strategy partly funded by the house of soros, uniting socialism (red), political islam (green), and the democratic party (blue)",
+    "tags": [
+      "opinion",
+      "democratic party",
+      "george soros",
+      "socialism"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:23.046346",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "new jersey lawmaker proposes legislation to rename delaware bay",
+    "url": "https://www.foxnews.com/politics/new-jersey-lawmaker-proposes-legislation-renaming-delaware-bay-the-bay-new-jersey",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'they’ve had a claim to that long enough,' gop state sen. michael testa said",
+    "tags": [
+      "new jersey",
+      "us",
+      "politics",
+      "donald trump",
+      "delaware",
+      "mexico"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:24.282392",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "hamas founder killed in gaza airstrike after planning brutal massacre",
+    "url": "https://www.foxnews.com/world/idf-kills-key-hamas-founder-deemed-orchestrator-oct-7-terror-attack-israel",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "hakham muhammad issa al-issa was actively working to rebuild hamas' organizational systems damaged during the war",
+    "tags": [
+      "israel",
+      "world",
+      "conflicts",
+      "terrorism"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:24.614291",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "poll shows partisan split on prayer in class as states adopt chaplain programs",
+    "url": "https://www.foxnews.com/media/majority-adults-support-religious-chaplains-public-schools-new-report-shows",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "republicans more likely than democrats to favor prayer and religious elements in public education, according to new survey",
+    "tags": [
+      "polls",
+      "protestant",
+      "us education",
+      "religion",
+      "teachers",
+      "media"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:25.045147",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "researchers find cancer-fighting potential in fungus linked to ancient curse",
+    "url": "https://www.foxnews.com/health/ancient-pharaohs-curse-fungus-shows-promise-killing-cancer-cells",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "scientists modified fungal molecules to create compounds that performed as well as fda-approved drugs",
+    "tags": [
+      "health",
+      "cancer",
+      "genetics science",
+      "science",
+      "cancer research",
+      "blood cancer",
+      "lifestyle",
+      "medical research",
+      "archaeology"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:25.574353",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "teen's summer swim turns tragic after freak diving accident at popular beach",
+    "url": "https://www.foxnews.com/us/freak-accident-beach-sends-teen-icu-mom-warns-waterfront-danger",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "hampton beach fire chief says freak incident 'unfortunate' as teenager remains in intensive care",
+    "tags": [
+      "new hampshire",
+      "us",
+      "disasters",
+      "beach travel news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:25.780133",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "dodgers two-way star throws 'unbelievable' pitch, leaving team's manager stunned",
+    "url": "https://www.foxnews.com/sports/shohei-ohtanis-pitch-sets-personal-record-dodgers-star-continues-ramp-up-pitching-activity",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "one of ohtani's pitches reached 101.7 mph",
+    "tags": [
+      "los angeles dodgers",
+      "mlb",
+      "shohei ohtani",
+      "sports",
+      "kansas city royals"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:26.799686",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "golf star has fiery exchange with analyst and former pro over golf etiquette",
+    "url": "https://www.foxnews.com/sports/padraig-harrington-clashes-ex-pga-tour-pro-roger-maltbie-over-golf-etiquette-us-senior-open",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "maltbie, a five-time pga tour winner, is a golf analyst for nbc",
+    "tags": [
+      "golf",
+      "sports",
+      "pga tour"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:27.592499",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "rapper exits uk festivals after she says anti-israel agenda was heavily touted",
+    "url": "https://www.foxnews.com/media/rapper-pulls-out-music-festivals-alleging-wanted-make-free-palestine-statements-onstage",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "boomtown festival denies dictating performers' personal views despite azealia banks' allegations of political pressure",
+    "tags": [
+      "media",
+      "music industry news",
+      "hip hop rap"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:28.711936",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "blue city braces for deadly holiday as fox analyst takes action in brother's murder",
+    "url": "https://www.foxnews.com/us/chicago-braces-deadly-july-4-weekend-fox-news-analyst-takes-action-brothers-unsolved-murder",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "gianno caldwell's new book details his journey for justice after waiting years without answers in brother's murder",
+    "tags": [
+      "crime",
+      "homicide",
+      "chicago",
+      "chicago's crime wave",
+      "holiday",
+      "us"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:30.014027",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "man's solution to stop roommate from taking his groceries sparks fiery reaction",
+    "url": "https://www.foxnews.com/food-drink/internet-blasts-man-accused-stealing-roommates-groceries-sense-entitlement",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "debate erupts over grocery disputes among roommates",
+    "tags": [
+      "food-drink",
+      "food",
+      "lifestyle",
+      "food",
+      "family and friends",
+      "odd news",
+      "real estate"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:31.300072",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "centuries-old remains with brown hair found just below busy metropolitan streets",
+    "url": "https://www.foxnews.com/travel/utility-workers-digging-trenches-stumble-1000-year-old-mummy-intact-hair",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "skeleton with intact hair found during trench excavation in lima",
+    "tags": [
+      "travel",
+      "world",
+      "archaeology",
+      "history",
+      "historical discoveries",
+      "historic sites",
+      "south america",
+      "odd news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:31.586755",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "americans flock to fox news as network crushes rivals during iran strike coverage",
+    "url": "https://www.foxnews.com/media/fox-news-outdraws-abc-nbc-cbs-during-breaking-news-coverage-us-strikes-irans-nuclear-facilities",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "network's digital platform achieved best weekend of 2025 as americans sought information on military action",
+    "tags": [
+      "media",
+      "iran",
+      "israel",
+      "fox news digital"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:31.883413",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 5
+  },
+  {
+    "title": "mamdani's race-based tax plan for nyc neighborhoods condemned by ny post",
+    "url": "https://www.foxnews.com/media/new-york-post-editorial-slams-zohran-mamdanis-plan-taxing-whites-more-calls-pure-racism",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'sorry, zohran — we need a mayor for all new yorkers,' the new york post editorial asserted",
+    "tags": [
+      "media",
+      "new york city",
+      "state and local elections",
+      "politics",
+      "democratic party"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:28.583548",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "'leave it to beaver' star reveals what kept cast in line during iconic show's run",
+    "url": "https://www.foxnews.com/entertainment/leave-beaver-star-jerry-mathers-minister-tv-dad-kept-cast-straight-narrow",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the 77-year-old actor recently reunited with surviving co-stars at the hollywood show",
+    "tags": [
+      "then and now",
+      "classics",
+      "old hollywood",
+      "tv",
+      "sitcom",
+      "entertainment"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:28.815942",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "jake paul erupts with vulgar orders after beating boxing legend's son",
+    "url": "https://www.foxnews.com/sports/jake-paul-tells-booing-crowd-shut-f-up-beating-julio-cesar-chavez",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "boxing judges scored the cruiserweight bout 99-91, 98-92 and 97-93 for paul in his most credible boxing matchup to date",
+    "tags": [
+      "jake paul",
+      "boxing",
+      "sports"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:28.977982",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "young assemblyman topples ex-governor in shocking nyc primary upset. dems must wake up",
+    "url": "https://www.foxnews.com/opinion/cuomo-comeback-crashed-young-voters-came-like-wrecking-ball",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "in defeating ex-gov. andrew cuomo in the nyc democratic mayoral primary, zohran mamdani didn’t just win a campaign. he upended a power structure",
+    "tags": [
+      "opinion",
+      "new york city",
+      "state and local primaries",
+      "politics",
+      "democratic party",
+      "andrew cuomo"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:29.313527",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "diddy 'might be cooked' on one charge as legal battle wraps up, expert warns",
+    "url": "https://www.foxnews.com/entertainment/diddy-might-cooked-key-sex-crime-jury-prepares-deliberate-expert-says",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "testimony in sean 'diddy' combs' sex trafficking and racketeering trial began on may 12",
+    "tags": [
+      "in court",
+      "sean 'diddy' combs",
+      "entertainment",
+      "trending news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:29.507593",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "newlyweds jeff bezos and lauren sánchez bezos pack on pda before star-studded bash",
+    "url": "https://www.foxnews.com/entertainment/newlyweds-jeff-bezos-lauren-sanchez-bezos-pack-pda-ahead-star-studded-wedding-celebration",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "kylie jenner, oprah winfrey among high-profile attendees spotted in glamorous attire for the third day of festivities",
+    "tags": [
+      "entertainment",
+      "jeff bezos",
+      "celebrity couples"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:29.731490",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "sailboat erupts in flames off florida coast as witness reports 'explosions'",
+    "url": "https://www.foxnews.com/us/boat-catches-fire-near-cape-canaveral-passengers-saved",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "witness reported explosions as four people evacuated from burning 61-foot vessel",
+    "tags": [
+      "florida",
+      "southeast",
+      "us fires",
+      "boating"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:30.209821",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "russia unleashes biggest aerial attack since conflict began, ukraine says",
+    "url": "https://www.foxnews.com/world/russia-launched-largest-aerial-attack-war-ukraine-says",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the attack was 'the most massive airstrike' against ukraine since russia launched its invasion, ukraine’s air force said",
+    "tags": [
+      "russia",
+      "ukraine",
+      "world",
+      "conflicts",
+      "vladimir putin",
+      "volodymyr zelenskyy"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:30.470739",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "justice roberts issues warning to politicians who use heated rhetoric",
+    "url": "https://www.foxnews.com/politics/chief-justice-roberts-sounds-alarm-dangerous-rhetoric-aimed-judges-from-politicians",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the supreme court chief justice appeared to reference both president donald trump and sen. chuck schumer while defending judicial independence",
+    "tags": [
+      "supreme court",
+      "chuck schumer",
+      "donald trump",
+      "federal judges",
+      "politics"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:30.663191",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "tourist captures bison's final moments in yellowstone hot spring tragedy",
+    "url": "https://www.foxnews.com/us/horrified-tourists-watch-bison-boils-death-yellowstone-hot-spring",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "witness captures final moments as bison becomes trapped in nearly-boiling waters of grand prismatic spring",
+    "tags": [
+      "national parks",
+      "wild nature"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:31.045229",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "fox news readers' favorites: get early prime day deals on last year's bestsellers",
+    "url": "https://www.foxnews.com/deals/amazon-prime-day-trending-deals",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "shop early prime day deals on last year's top picks",
+    "tags": [
+      "deals",
+      "commerce",
+      "amazon deals"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:31.737968",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "scientists find alzheimer's-fighting compound in popular cooking ingredients",
+    "url": "https://www.foxnews.com/food-drink/ingredient-common-kitchen-herbs-could-target-alzheimers-dont-change-recipes",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "chemical in common herbs reduced brain inflammation, improved neuron connections in mice — holds promise for humans",
+    "tags": [
+      "food-drink",
+      "food",
+      "alzheimers",
+      "health",
+      "lifestyle",
+      "healthy foods",
+      "food",
+      "brain health",
+      "medical research",
+      "cooking basics"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:31.963521",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "american culture quiz time featuring iconic ice cream and remarkable museums",
+    "url": "https://www.foxnews.com/lifestyle/american-culture-quiz-test-yourself-iconic-ice-cream-marvelous-museums",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "test yourself — see how much you know about this week's hot topics!",
+    "tags": [
+      "quizzes",
+      "lifestyle",
+      "food-drink",
+      "entertainment",
+      "travel",
+      "history",
+      "wild nature",
+      "weddings tips & trends",
+      "dessert recipes"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:32.138812",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "the best early prime day deals: tech, home and more for less than $100",
+    "url": "https://www.foxnews.com/deals/best-deals-amazon",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "get early deals on amazon fire stick, ring doorbell, apple airtags and more",
+    "tags": [
+      "deals",
+      "commerce",
+      "amazon"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:32.310143",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "colorado funeral home owner handed maximum sentence in disturbing fraud case",
+    "url": "https://www.foxnews.com/us/colorado-funeral-home-owner-sentenced-20-years-stashing-nearly-190-decaying-bodies",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'this is not an ordinary fraud case,' judge nina wang said, adding that the details warranted the maximum sentence",
+    "tags": [
+      "colorado",
+      "us",
+      "crime",
+      "police and law enforcement",
+      "law"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:32.501259",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "'stranger things' star millie bobby brown sizzles in string bikini during getaway",
+    "url": "https://www.foxnews.com/entertainment/stranger-things-star-millie-bobby-brown-sizzles-tiny-string-bikini-during-beach-getaway",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the 21-year-old actress showed off her toned physique in a paisley blue and green two-piece with white lace trim",
+    "tags": [
+      "millie bobby brown",
+      "entertainment",
+      "movies",
+      "tv",
+      "celebrity couples"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:32.698335",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "'full house' star opens up about how god 'shows up' in unexpected ways",
+    "url": "https://www.foxnews.com/entertainment/candace-cameron-bure-unexpected-way-god-shows-up-her-scariest-moments",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the 'full house' alum shares insights from her new devotional book about finding strength in faith even during failures",
+    "tags": [
+      "entertainment",
+      "exclusive interviews",
+      "books",
+      "tv"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:32.893579",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "socialist muslim mayoral nominee's rise reveals soros-funded web in democratic party",
+    "url": "https://www.foxnews.com/opinion/asra-nomani-how-socialist-muslims-seized-democratic-party-20-year-political-campaign",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the rise of zohran mamdani is the product of a strategy partly funded by the house of soros, uniting socialism (red), political islam (green), and the democratic party (blue)",
+    "tags": [
+      "opinion",
+      "democratic party",
+      "george soros",
+      "socialism"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:33.235418",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "new jersey lawmaker proposes legislation to rename delaware bay",
+    "url": "https://www.foxnews.com/politics/new-jersey-lawmaker-proposes-legislation-renaming-delaware-bay-the-bay-new-jersey",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'they’ve had a claim to that long enough,' gop state sen. michael testa said",
+    "tags": [
+      "new jersey",
+      "us",
+      "politics",
+      "donald trump",
+      "delaware",
+      "mexico"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:33.582514",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "hamas founder killed in gaza airstrike after planning brutal massacre",
+    "url": "https://www.foxnews.com/world/idf-kills-key-hamas-founder-deemed-orchestrator-oct-7-terror-attack-israel",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "hakham muhammad issa al-issa was actively working to rebuild hamas' organizational systems damaged during the war",
+    "tags": [
+      "israel",
+      "world",
+      "conflicts",
+      "terrorism"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:33.965275",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "poll shows partisan split on prayer in class as states adopt chaplain programs",
+    "url": "https://www.foxnews.com/media/majority-adults-support-religious-chaplains-public-schools-new-report-shows",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "republicans more likely than democrats to favor prayer and religious elements in public education, according to new survey",
+    "tags": [
+      "polls",
+      "protestant",
+      "us education",
+      "religion",
+      "teachers",
+      "media"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:34.201813",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "researchers find cancer-fighting potential in fungus linked to ancient curse",
+    "url": "https://www.foxnews.com/health/ancient-pharaohs-curse-fungus-shows-promise-killing-cancer-cells",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "scientists modified fungal molecules to create compounds that performed as well as fda-approved drugs",
+    "tags": [
+      "health",
+      "cancer",
+      "genetics science",
+      "science",
+      "cancer research",
+      "blood cancer",
+      "lifestyle",
+      "medical research",
+      "archaeology"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:35.749932",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "teen's summer swim turns tragic after freak diving accident at popular beach",
+    "url": "https://www.foxnews.com/us/freak-accident-beach-sends-teen-icu-mom-warns-waterfront-danger",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "hampton beach fire chief says freak incident 'unfortunate' as teenager remains in intensive care",
+    "tags": [
+      "new hampshire",
+      "us",
+      "disasters",
+      "beach travel news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:35.943980",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "dodgers two-way star throws 'unbelievable' pitch, leaving team's manager stunned",
+    "url": "https://www.foxnews.com/sports/shohei-ohtanis-pitch-sets-personal-record-dodgers-star-continues-ramp-up-pitching-activity",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "one of ohtani's pitches reached 101.7 mph",
+    "tags": [
+      "los angeles dodgers",
+      "mlb",
+      "shohei ohtani",
+      "sports",
+      "kansas city royals"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:36.114853",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "golf star has fiery exchange with analyst and former pro over golf etiquette",
+    "url": "https://www.foxnews.com/sports/padraig-harrington-clashes-ex-pga-tour-pro-roger-maltbie-over-golf-etiquette-us-senior-open",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "maltbie, a five-time pga tour winner, is a golf analyst for nbc",
+    "tags": [
+      "golf",
+      "sports",
+      "pga tour"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:36.601661",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "rapper exits uk festivals after she says anti-israel agenda was heavily touted",
+    "url": "https://www.foxnews.com/media/rapper-pulls-out-music-festivals-alleging-wanted-make-free-palestine-statements-onstage",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "boomtown festival denies dictating performers' personal views despite azealia banks' allegations of political pressure",
+    "tags": [
+      "media",
+      "music industry news",
+      "hip hop rap"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:37.311534",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "blue city braces for deadly holiday as fox analyst takes action in brother's murder",
+    "url": "https://www.foxnews.com/us/chicago-braces-deadly-july-4-weekend-fox-news-analyst-takes-action-brothers-unsolved-murder",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "gianno caldwell's new book details his journey for justice after waiting years without answers in brother's murder",
+    "tags": [
+      "crime",
+      "homicide",
+      "chicago",
+      "chicago's crime wave",
+      "holiday",
+      "us"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:38.395895",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "man's solution to stop roommate from taking his groceries sparks fiery reaction",
+    "url": "https://www.foxnews.com/food-drink/internet-blasts-man-accused-stealing-roommates-groceries-sense-entitlement",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "debate erupts over grocery disputes among roommates",
+    "tags": [
+      "food-drink",
+      "food",
+      "lifestyle",
+      "food",
+      "family and friends",
+      "odd news",
+      "real estate"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:38.561067",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "centuries-old remains with brown hair found just below busy metropolitan streets",
+    "url": "https://www.foxnews.com/travel/utility-workers-digging-trenches-stumble-1000-year-old-mummy-intact-hair",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "skeleton with intact hair found during trench excavation in lima",
+    "tags": [
+      "travel",
+      "world",
+      "archaeology",
+      "history",
+      "historical discoveries",
+      "historic sites",
+      "south america",
+      "odd news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:38.719766",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "americans flock to fox news as network crushes rivals during iran strike coverage",
+    "url": "https://www.foxnews.com/media/fox-news-outdraws-abc-nbc-cbs-during-breaking-news-coverage-us-strikes-irans-nuclear-facilities",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "network's digital platform achieved best weekend of 2025 as americans sought information on military action",
+    "tags": [
+      "media",
+      "iran",
+      "israel",
+      "fox news digital"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:24:38.891275",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 1,
+    "task_id": 6
+  },
+  {
+    "title": "senate republicans advance trump's 'big beautiful bill' but final vote hangs in balance",
+    "url": "https://www.bbc.com/news/articles/c15wn34z0z4o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "senate leadership twisted arms for an initial vote on the spending plan, which still needs final approval.",
+    "tags": [
+      "donald trump",
+      "us politics",
+      "us congress",
+      "united states"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:11.488159",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "uk government condemns glastonbury chants aired live on bbc",
+    "url": "https://www.bbc.com/news/articles/c33514nryy1o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the festival said chants from the punk duo which called for death to israel's military \"crossed a line\".",
+    "tags": [
+      "music"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:11.573356",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "senate republicans advance trump's 'big beautiful bill' but final vote hangs in balance",
+    "url": "https://www.bbc.com/news/articles/c15wn34z0z4o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "senate leadership twisted arms for an initial vote on the spending plan, which still needs final approval.",
+    "tags": [
+      "donald trump",
+      "us politics",
+      "us congress",
+      "united states"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:11.670076",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "uk government condemns glastonbury chants aired live on bbc",
+    "url": "https://www.bbc.com/news/articles/c33514nryy1o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the festival said chants from the punk duo which called for death to israel's military \"crossed a line\".",
+    "tags": [
+      "music"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:11.755267",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "serbia police clash with anti-government protesters in belgrade",
+    "url": "https://www.bbc.com/news/articles/cn41gwwx3mzo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "president aleksandar vucic - populist and close to russia - has faced months of protests and alleges a foreign coup plot.",
+    "tags": [
+      "serbia",
+      "belgrade"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:13.494616",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "a preacher asked me out. when i turned her down, the stalking began",
+    "url": "https://www.bbc.com/news/articles/ce3velqy9rzo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "when jay hulme complained about the harassment to a bishop, he was accused of witchcraft.",
+    "tags": [
+      "stalking",
+      "lgbt",
+      "the church of england",
+      "christianity"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:13.927797",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "what love island usa can learn from the uk show's own tragedies",
+    "url": "https://www.bbc.com/news/articles/ckg3ek8y2k0o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the show issued a public plea for viewers to stop cyberbullying and harassing its contestants.",
+    "tags": [
+      "itv",
+      "television",
+      "reality tv",
+      "love island",
+      "united states"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:15.429698",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "the european nation pioneering 'beer diplomacy'",
+    "url": "https://www.bbc.com/travel/article/20250627-the-european-nation-pioneering-beer-diplomacy",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "for the last six years, the globe's top beer tourism destination has been quietly inviting brewers to the czech republic to teach the world how to drink properly.",
+    "tags": [
+      "world's table",
+      "food & drink",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:17.003453",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "the story behind hollywood's most famous side-eye",
+    "url": "https://www.bbc.com/culture/article/20250627-the-forgotten-story-behind-the-most-famous-side-eye-in-hollywood-history",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "at a paramount studios dinner party in 1957, one of show business' most glamorous – and notorious – snapshots was taken, of actress sophia loren next to jayne mansfield.",
+    "tags": [
+      "art",
+      "art and design",
+      "photography",
+      "hollywood",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:17.140550",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "why an apple a day is really good for you",
+    "url": "https://www.bbc.com/future/article/20250620-is-an-apple-a-day-really-good-for-your-health",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "we're told \"an apple a day keeps the doctor away\", but does this humble fruit really have an outsized positive effect on our health?",
+    "tags": [
+      "food",
+      "nutrition",
+      "chemistry",
+      "health",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:17.242330",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "thousands protest in bangkok calling for thai pm to resign",
+    "url": "https://www.bbc.com/news/articles/ceq7glqzr53o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "demands to resign follow a leaked phone call the prime minister had with cambodia's former leader about a border dispute.",
+    "tags": [
+      "thailand",
+      "bangkok",
+      "cambodia"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:17.727775",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "'proud to be gay': k-pop star on coming out to the world",
+    "url": "https://www.bbc.com/news/articles/cn5kx7wn1nzo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "only a handful of k-pop artists have come out as gay, but none as publicly as bain. is this a turning point?",
+    "tags": [
+      "asia",
+      "k-pop",
+      "south korea",
+      "lgbt",
+      "music"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:17.825792",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "the mystery of the paedophile who hired out disneyland",
+    "url": "https://www.bbc.com/news/articles/c93kg14zn3zo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "jacky jhaj organised a fake wedding to a nine-year-old last weekend - and previously got fake fans to fawn over him on a red carpet.",
+    "tags": [
+      "paris"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:18.997411",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "thousands party at budapest pride in clear message to orban",
+    "url": "https://www.bbc.com/news/articles/clylnev5y36o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "a giant crowd throngs the hungarian capital, championing lgbt rights and defying pm viktor orban.",
+    "tags": [
+      "budapest",
+      "pride",
+      "viktor orban",
+      "lgbt",
+      "hungary"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:19.767066",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "at least 81 people killed in israeli strikes in gaza, hamas-run health ministry says",
+    "url": "https://www.bbc.com/news/articles/czry8g5n80zo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "hospital staff and witnesses said at least 11 people were killed after a strike near tents housing displaced people on friday.",
+    "tags": [
+      "israel-gaza war",
+      "israel",
+      "palestinian territories"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:20.063591",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "'proud to be gay': k-pop star on coming out to the world",
+    "url": "https://www.bbc.com/news/articles/cn5kx7wn1nzo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "only a handful of k-pop artists have come out as gay, but none as publicly as bain. is this a turning point?",
+    "tags": [
+      "asia",
+      "k-pop",
+      "south korea",
+      "lgbt",
+      "music"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:20.154781",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "a pioneering doctor remembers india leader indira gandhi's final moments",
+    "url": "https://www.bbc.com/news/articles/cvgenl7gv2lo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "sneh bhargava, the first woman to helm one of india's top medical institutions, was called upon to treat indira gandhi after she was shot in 1984.",
+    "tags": [
+      "asia",
+      "india",
+      "history"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:20.240260",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "the mystery of the paedophile who hired out disneyland",
+    "url": "https://www.bbc.com/news/articles/c93kg14zn3zo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "jacky jhaj organised a fake wedding to a nine-year-old last weekend - and previously got fake fans to fawn over him on a red carpet.",
+    "tags": [
+      "paris"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:20.325380",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "how the first 'sensational' picture of lady diana came about",
+    "url": "https://www.bbc.com/reel/video/p0kr3tk9/how-the-first-sensational-picture-of-lady-diana-came-about",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "it starts nearly 40 years ago, when a teenage girl is pulled out of obscurity and thrust into the spotlight.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:20.991814",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "watch the dramatic escape of tiny fish from deadly sharks",
+    "url": "https://www.bbc.com/reel/video/p0k74hwb/watch-the-dramatic-escape-of-tiny-fish-from-deadly-sharks",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the moorish idol, a dramatic little fish with dazzling stripes, adopts a clever strategy to save its life.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:21.541630",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "an inside look at the near-death experience",
+    "url": "https://www.bbc.com/reel/video/p0gwr9wz/an-inside-look-at-the-near-death-experience",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "a new study might explain why dying patients' lives flash before their eyes.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:23.984267",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "the enduring mystery of amelia earhart",
+    "url": "https://www.bbc.com/reel/video/p0h86rjz/the-enduring-mystery-of-amelia-earhart",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "has amelia earhart's plane really been found? here are the key things to know.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:25.228747",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "when dressing in drag could get you arrested",
+    "url": "https://www.bbc.com/reel/video/p0lls0yt/when-dressing-in-drag-could-get-you-arrested",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "in 1962, dozens were arrested at a drag and trans ball in new york under laws criminalising gender nonconformity.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:25.815376",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "lyme disease: the devastating impact of a tick bite",
+    "url": "https://www.bbc.com/reel/video/p0g3c56c/lyme-disease-the-devastating-impact-of-a-tick-bite",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "as the planet continues to warm, this summer could be the worst yet for tick-borne infections like lyme disease.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:26.699259",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "is alkaline water good for you?",
+    "url": "https://www.bbc.com/reel/video/p0g27l49/is-alkaline-water-good-for-you-",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the truth about alkaline water. does it really provide health benefits by balancing our ph levels?",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:27.079101",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "jane fonda: 'it's much harder to be young than it is old'",
+    "url": "https://www.bbc.com/reel/video/p08ztyzt/jane-fonda-it-s-much-harder-to-be-young-than-it-is-old-",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "at 82 years old, jane fonda is winning awards, protesting, and getting arrested.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:27.588692",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "10 of the best films to watch this july",
+    "url": "https://www.bbc.com/culture/article/20250625-10-of-the-best-films-to-watch-this-july",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "from superman to i know what you did last summer – these are the films to watch at the cinema and stream at home this month.",
+    "tags": [
+      "the watch list",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:28.131407",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "nine of the best tv shows to watch this july",
+    "url": "https://www.bbc.com/culture/article/20250623-nine-of-the-best-tv-shows-to-watch-this-july",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "from lena dunham's new netflix rom-com, set in london, to the return of michael c hall's murderous dexter and a stunning wildlife series.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:38.140613",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "the tiny european island of tolerance",
+    "url": "https://www.bbc.com/travel/article/20240130-malta-the-tiny-european-island-of-tolerance",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "inspired by a trailblazing transgender model, malta has become one of the most accepting countries in the world in the past 20 years.",
+    "tags": [
+      "lgbt",
+      "history",
+      "nightlife",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:38.859193",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "the indian princess who lived in nazi germany",
+    "url": "https://www.bbc.com/news/uk-england-suffolk-64669420",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the overlooked story of catherine duleep singh, the queer daughter of the last king of the punjab.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:39.150123",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "one of the world's earliest gay anthems",
+    "url": "https://www.bbc.com/culture/article/20250624-the-1928-song-that-is-one-the-worlds-first-gay-anthems-ma-rainey",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "ma rainey's sensational prove it on me blues is a landmark song that had a profound and lasting effect.",
+    "tags": [
+      "music",
+      "music-history",
+      "lgbt",
+      "lgbtq+ pride",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:39.742545",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "a look at the key items in trump's 'big, beautiful bill'",
+    "url": "https://www.bbc.com/news/articles/c0eqpz23l9jo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the tax and spending bill, which is set for a senate vote, includes sweeping changes to taxes, social security and more.",
+    "tags": [
+      "us politics",
+      "us congress",
+      "united states"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:39.833837",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "car bomb attack in pakistan kills at least 13 soldiers",
+    "url": "https://www.bbc.com/news/articles/cjd2z0d8772o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "pakistan's military accuses india of backing militants behind the attack, which india denies.",
+    "tags": [
+      "pakistan",
+      "india"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:39.924479",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "lowe hits back at stadium announcer's trolling",
+    "url": "https://www.bbc.com/sport/rugby-union/articles/cgq734dkng3o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "lions winger james lowe hits back at the perth stadium announcer's trolling about the tourists' southern hemisphere-born players.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:40.034572",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "'we have all the cards' - trump says he is ending canada trade talks",
+    "url": "https://www.bbc.com/news/articles/ckg629n7wzvo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "canada had been hoping to secure a trade deal with the us next month to avoid steep tariffs.",
+    "tags": [
+      "trump tariffs",
+      "canada",
+      "mark carney",
+      "donald trump",
+      "united states"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:40.195001",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "council claims ai pilot saves staff time",
+    "url": "https://www.bbc.com/news/articles/crl0d5n4e67o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "stockton bosses say the systems, which transcribe meetings and reduce paperwork, free-up staff.",
+    "tags": [
+      "stockton-on-tees borough council",
+      "artificial intelligence",
+      "stockton-on-tees",
+      "unison"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:40.586522",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "uk food retailers pushed to make healthy options more appealing",
+    "url": "https://www.bbc.com/news/articles/ckg5xzpmxzgo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the government is partnering with food businesses in england to reduce calories content of the weekly shop.",
+    "tags": [
+      "obesity",
+      "health",
+      "supermarkets",
+      "food"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:40.688088",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "marilyn manson gig cancelled after protests",
+    "url": "https://www.bbc.com/news/articles/ckgd4ewln09o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the us rock star is planning to bring his latest tour to the uk in october and november.",
+    "tags": [
+      "brighton",
+      "music"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:41.157650",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "the real meaning of van gogh's sunflowers",
+    "url": "https://www.bbc.com/culture/article/20250625-the-real-meaning-of-van-goghs-sunflowers",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "they helped to make vincent van gogh among the most famous and influential painters in the history of art. why did sunflowers obsess him and so many other artists before and since?",
+    "tags": [
+      "art",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:41.730383",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "how 'school stays' are reviving rural japan",
+    "url": "https://www.bbc.com/travel/article/20250626-how-school-stays-are-saving-japans-dying-villages",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "some 450 rural schools close each year, as japanese increasingly migrate to cities. now, some are being transformed into unique inns close to nature.",
+    "tags": [
+      "hotels",
+      "mountain",
+      "heritage",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:42.191961",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "is there such a thing as american cuisine?",
+    "url": "https://www.bbc.com/travel/article/20250606-felicity-cloakes-american-food-odyssey",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "for her new book, peach street to lobster lane, british food writer felicity cloake cycles across the us from coast to coast in search of a definition for its national cuisine.",
+    "tags": [
+      "food & drink",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:42.761113",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "can la fire-proof itself?",
+    "url": "https://www.bbc.com/future/article/20250626-can-la-fire-proof-itself",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "six months after the wildfires tore through los angeles, residents are tussling with the urban destruction left behind – and a debate over the future of the city's buildings.",
+    "tags": [
+      "earth",
+      "fire",
+      "wildfire",
+      "environment",
+      "extreme weather",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:43.560493",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "the hidden calories we consume without knowing",
+    "url": "https://www.bbc.com/reel/video/p0ll3ht3/the-hidden-calories-we-consume-without-knowing",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "many of us get a quarter of our daily calories from our snacks, but there are ways to snack more smartly.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:24:44.223684",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 4
+  },
+  {
+    "title": "mamdani's race-based tax plan for nyc neighborhoods condemned by ny post",
+    "url": "https://www.foxnews.com/media/new-york-post-editorial-slams-zohran-mamdanis-plan-taxing-whites-more-calls-pure-racism",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'sorry, zohran — we need a mayor for all new yorkers,' the new york post editorial asserted",
+    "tags": [
+      "media",
+      "new york city",
+      "state and local elections",
+      "politics",
+      "democratic party"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:21.444148",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "jake paul erupts with vulgar orders after beating boxing legend's son",
+    "url": "https://www.foxnews.com/sports/jake-paul-tells-booing-crowd-shut-f-up-beating-julio-cesar-chavez",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "boxing judges scored the cruiserweight bout 99-91, 98-92 and 97-93 for paul in his most credible boxing matchup to date",
+    "tags": [
+      "jake paul",
+      "boxing",
+      "sports"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:21.593623",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "diddy 'might be cooked' on one charge as legal battle wraps up, expert warns",
+    "url": "https://www.foxnews.com/entertainment/diddy-might-cooked-key-sex-crime-jury-prepares-deliberate-expert-says",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "testimony in sean 'diddy' combs' sex trafficking and racketeering trial began on may 12",
+    "tags": [
+      "in court",
+      "sean 'diddy' combs",
+      "entertainment",
+      "trending news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:21.879318",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "newlyweds jeff bezos and lauren sánchez bezos pack on pda before star-studded bash",
+    "url": "https://www.foxnews.com/entertainment/newlyweds-jeff-bezos-lauren-sanchez-bezos-pack-pda-ahead-star-studded-wedding-celebration",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "kylie jenner, oprah winfrey among high-profile attendees spotted in glamorous attire for the third day of festivities",
+    "tags": [
+      "entertainment",
+      "jeff bezos",
+      "celebrity couples"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:22.003806",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "young assemblyman topples ex-governor in shocking nyc primary upset. dems must wake up",
+    "url": "https://www.foxnews.com/opinion/cuomo-comeback-crashed-young-voters-came-like-wrecking-ball",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "in defeating ex-gov. andrew cuomo in the nyc democratic mayoral primary, zohran mamdani didn’t just win a campaign. he upended a power structure",
+    "tags": [
+      "opinion",
+      "new york city",
+      "state and local primaries",
+      "politics",
+      "democratic party",
+      "andrew cuomo"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:22.329750",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "beach vacationers can follow simple steps to avoid shark attacks amid 'hysteria'",
+    "url": "https://www.foxnews.com/us/shark-week-host-warns-beachgoers-where-when-predators-most-likely-attack",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "a biologist offers summer safety tips for beachgoers as fear of shark attacks reaches a fever pitch",
+    "tags": [
+      "us",
+      "sharks",
+      "beach travel news",
+      "travel"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:22.440174",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "sailboat erupts in flames off florida coast as witness reports 'explosions'",
+    "url": "https://www.foxnews.com/us/boat-catches-fire-near-cape-canaveral-passengers-saved",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "witness reported explosions as four people evacuated from burning 61-foot vessel",
+    "tags": [
+      "florida",
+      "southeast",
+      "us fires",
+      "boating"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:22.556495",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "justice roberts issues warning to politicians who use heated rhetoric",
+    "url": "https://www.foxnews.com/politics/chief-justice-roberts-sounds-alarm-dangerous-rhetoric-aimed-judges-from-politicians",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the supreme court chief justice appeared to reference both president donald trump and sen. chuck schumer while defending judicial independence",
+    "tags": [
+      "supreme court",
+      "chuck schumer",
+      "donald trump",
+      "federal judges",
+      "politics"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:22.714716",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "tourist captures bison's final moments in yellowstone hot spring tragedy",
+    "url": "https://www.foxnews.com/us/horrified-tourists-watch-bison-boils-death-yellowstone-hot-spring",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "witness captures final moments as bison becomes trapped in nearly-boiling waters of grand prismatic spring",
+    "tags": [
+      "national parks",
+      "wild nature"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:22.916675",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "fox news readers' favorites: get early prime day deals on last year's bestsellers",
+    "url": "https://www.foxnews.com/deals/amazon-prime-day-trending-deals",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "shop early prime day deals on last year's top picks",
+    "tags": [
+      "deals",
+      "commerce",
+      "amazon deals"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:23.407411",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "scientists find alzheimer's-fighting compound in popular cooking ingredients",
+    "url": "https://www.foxnews.com/food-drink/ingredient-common-kitchen-herbs-could-target-alzheimers-dont-change-recipes",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "chemical in common herbs reduced brain inflammation, improved neuron connections in mice — holds promise for humans",
+    "tags": [
+      "food-drink",
+      "food",
+      "alzheimers",
+      "health",
+      "lifestyle",
+      "healthy foods",
+      "food",
+      "brain health",
+      "medical research",
+      "cooking basics"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:23.522332",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "american culture quiz time featuring iconic ice cream and remarkable museums",
+    "url": "https://www.foxnews.com/lifestyle/american-culture-quiz-test-yourself-iconic-ice-cream-marvelous-museums",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "test yourself — see how much you know about this week's hot topics!",
+    "tags": [
+      "quizzes",
+      "lifestyle",
+      "food-drink",
+      "entertainment",
+      "travel",
+      "history",
+      "wild nature",
+      "weddings tips & trends",
+      "dessert recipes"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:23.879181",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "the best early prime day deals: tech, home and more for less than $100",
+    "url": "https://www.foxnews.com/deals/best-deals-amazon",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "get early deals on amazon fire stick, ring doorbell, apple airtags and more",
+    "tags": [
+      "deals",
+      "commerce",
+      "amazon"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:24.138583",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "russia unleashes biggest aerial attack since conflict began, ukraine says",
+    "url": "https://www.foxnews.com/world/russia-launched-largest-aerial-attack-war-ukraine-says",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the attack was 'the most massive airstrike' against ukraine since russia launched its invasion, ukraine’s air force said",
+    "tags": [
+      "russia",
+      "ukraine",
+      "world",
+      "conflicts",
+      "vladimir putin",
+      "volodymyr zelenskyy"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:24.265683",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "colorado funeral home owner handed maximum sentence in disturbing fraud case",
+    "url": "https://www.foxnews.com/us/colorado-funeral-home-owner-sentenced-20-years-stashing-nearly-190-decaying-bodies",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'this is not an ordinary fraud case,' judge nina wang said, adding that the details warranted the maximum sentence",
+    "tags": [
+      "colorado",
+      "us",
+      "crime",
+      "police and law enforcement",
+      "law"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:24.395460",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "'stranger things' star millie bobby brown sizzles in string bikini during getaway",
+    "url": "https://www.foxnews.com/entertainment/stranger-things-star-millie-bobby-brown-sizzles-tiny-string-bikini-during-beach-getaway",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the 21-year-old actress showed off her toned physique in a paisley blue and green two-piece with white lace trim",
+    "tags": [
+      "millie bobby brown",
+      "entertainment",
+      "movies",
+      "tv",
+      "celebrity couples"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:24.528926",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "'full house' star opens up about how god 'shows up' in unexpected ways",
+    "url": "https://www.foxnews.com/entertainment/candace-cameron-bure-unexpected-way-god-shows-up-her-scariest-moments",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the 'full house' alum shares insights from her new devotional book about finding strength in faith even during failures",
+    "tags": [
+      "entertainment",
+      "exclusive interviews",
+      "books",
+      "tv"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:24.663645",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "socialist muslim mayoral nominee's rise reveals soros-funded web in democratic party",
+    "url": "https://www.foxnews.com/opinion/asra-nomani-how-socialist-muslims-seized-democratic-party-20-year-political-campaign",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the rise of zohran mamdani is the product of a strategy partly funded by the house of soros, uniting socialism (red), political islam (green), and the democratic party (blue)",
+    "tags": [
+      "opinion",
+      "democratic party",
+      "george soros",
+      "socialism"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:25.791163",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "new jersey lawmaker proposes legislation to rename delaware bay",
+    "url": "https://www.foxnews.com/politics/new-jersey-lawmaker-proposes-legislation-renaming-delaware-bay-the-bay-new-jersey",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'they’ve had a claim to that long enough,' gop state sen. michael testa said",
+    "tags": [
+      "new jersey",
+      "us",
+      "politics",
+      "donald trump",
+      "delaware",
+      "mexico"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:25.919627",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "hamas founder killed in gaza airstrike after planning brutal massacre",
+    "url": "https://www.foxnews.com/world/idf-kills-key-hamas-founder-deemed-orchestrator-oct-7-terror-attack-israel",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "hakham muhammad issa al-issa was actively working to rebuild hamas' organizational systems damaged during the war",
+    "tags": [
+      "israel",
+      "world",
+      "conflicts",
+      "terrorism"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:26.046462",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "researchers find cancer-fighting potential in fungus linked to ancient curse",
+    "url": "https://www.foxnews.com/health/ancient-pharaohs-curse-fungus-shows-promise-killing-cancer-cells",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "scientists modified fungal molecules to create compounds that performed as well as fda-approved drugs",
+    "tags": [
+      "health",
+      "cancer",
+      "genetics science",
+      "science",
+      "cancer research",
+      "blood cancer",
+      "lifestyle",
+      "medical research",
+      "archaeology"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:26.267607",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "teen's summer swim turns tragic after freak diving accident at popular beach",
+    "url": "https://www.foxnews.com/us/freak-accident-beach-sends-teen-icu-mom-warns-waterfront-danger",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "hampton beach fire chief says freak incident 'unfortunate' as teenager remains in intensive care",
+    "tags": [
+      "new hampshire",
+      "us",
+      "disasters",
+      "beach travel news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:26.557238",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "dodgers two-way star throws 'unbelievable' pitch, leaving team's manager stunned",
+    "url": "https://www.foxnews.com/sports/shohei-ohtanis-pitch-sets-personal-record-dodgers-star-continues-ramp-up-pitching-activity",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "one of ohtani's pitches reached 101.7 mph",
+    "tags": [
+      "los angeles dodgers",
+      "mlb",
+      "shohei ohtani",
+      "sports",
+      "kansas city royals"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:26.685040",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "golf star has fiery exchange with analyst and former pro over golf etiquette",
+    "url": "https://www.foxnews.com/sports/padraig-harrington-clashes-ex-pga-tour-pro-roger-maltbie-over-golf-etiquette-us-senior-open",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "maltbie, a five-time pga tour winner, is a golf analyst for nbc",
+    "tags": [
+      "golf",
+      "sports",
+      "pga tour"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:26.997265",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "rapper exits uk festivals after she says anti-israel agenda was heavily touted",
+    "url": "https://www.foxnews.com/media/rapper-pulls-out-music-festivals-alleging-wanted-make-free-palestine-statements-onstage",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "boomtown festival denies dictating performers' personal views despite azealia banks' allegations of political pressure",
+    "tags": [
+      "media",
+      "music industry news",
+      "hip hop rap"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:27.990856",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "blue city braces for deadly holiday as fox analyst takes action in brother's murder",
+    "url": "https://www.foxnews.com/us/chicago-braces-deadly-july-4-weekend-fox-news-analyst-takes-action-brothers-unsolved-murder",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "gianno caldwell's new book details his journey for justice after waiting years without answers in brother's murder",
+    "tags": [
+      "crime",
+      "homicide",
+      "chicago",
+      "chicago's crime wave",
+      "holiday",
+      "us"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:28.679726",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "man's solution to stop roommate from taking his groceries sparks fiery reaction",
+    "url": "https://www.foxnews.com/food-drink/internet-blasts-man-accused-stealing-roommates-groceries-sense-entitlement",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "debate erupts over grocery disputes among roommates",
+    "tags": [
+      "food-drink",
+      "food",
+      "lifestyle",
+      "food",
+      "family and friends",
+      "odd news",
+      "real estate"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:28.808556",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "centuries-old remains with brown hair found just below busy metropolitan streets",
+    "url": "https://www.foxnews.com/travel/utility-workers-digging-trenches-stumble-1000-year-old-mummy-intact-hair",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "skeleton with intact hair found during trench excavation in lima",
+    "tags": [
+      "travel",
+      "world",
+      "archaeology",
+      "history",
+      "historical discoveries",
+      "historic sites",
+      "south america",
+      "odd news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:28.938349",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "americans flock to fox news as network crushes rivals during iran strike coverage",
+    "url": "https://www.foxnews.com/media/fox-news-outdraws-abc-nbc-cbs-during-breaking-news-coverage-us-strikes-irans-nuclear-facilities",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "network's digital platform achieved best weekend of 2025 as americans sought information on military action",
+    "tags": [
+      "media",
+      "iran",
+      "israel",
+      "fox news digital"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:29.194788",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 5
+  },
+  {
+    "title": "senate republicans advance trump's 'big beautiful bill' but final vote hangs in balance",
+    "url": "https://www.bbc.com/news/articles/c15wn34z0z4o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "senate leadership twisted arms for an initial vote on the spending plan, which still needs final approval.",
+    "tags": [
+      "donald trump",
+      "us politics",
+      "us congress",
+      "united states"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:19.894510",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "uk government condemns glastonbury chants aired live on bbc",
+    "url": "https://www.bbc.com/news/articles/c33514nryy1o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the festival said chants from the punk duo which called for death to israel's military \"crossed a line\".",
+    "tags": [
+      "music"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:19.983905",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "senate republicans advance trump's 'big beautiful bill' but final vote hangs in balance",
+    "url": "https://www.bbc.com/news/articles/c15wn34z0z4o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "senate leadership twisted arms for an initial vote on the spending plan, which still needs final approval.",
+    "tags": [
+      "donald trump",
+      "us politics",
+      "us congress",
+      "united states"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:20.073960",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "uk government condemns glastonbury chants aired live on bbc",
+    "url": "https://www.bbc.com/news/articles/c33514nryy1o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the festival said chants from the punk duo which called for death to israel's military \"crossed a line\".",
+    "tags": [
+      "music"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:20.158679",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "serbia police clash with anti-government protesters in belgrade",
+    "url": "https://www.bbc.com/news/articles/cn41gwwx3mzo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "president aleksandar vucic - populist and close to russia - has faced months of protests and alleges a foreign coup plot.",
+    "tags": [
+      "serbia",
+      "belgrade"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:20.436193",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "a preacher asked me out. when i turned her down, the stalking began",
+    "url": "https://www.bbc.com/news/articles/ce3velqy9rzo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "when jay hulme complained about the harassment to a bishop, he was accused of witchcraft.",
+    "tags": [
+      "stalking",
+      "lgbt",
+      "the church of england",
+      "christianity"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:20.795687",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "what love island usa can learn from the uk show's own tragedies",
+    "url": "https://www.bbc.com/news/articles/ckg3ek8y2k0o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the show issued a public plea for viewers to stop cyberbullying and harassing its contestants.",
+    "tags": [
+      "itv",
+      "television",
+      "reality tv",
+      "love island",
+      "united states"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:21.189474",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "the european nation pioneering 'beer diplomacy'",
+    "url": "https://www.bbc.com/travel/article/20250627-the-european-nation-pioneering-beer-diplomacy",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "for the last six years, the globe's top beer tourism destination has been quietly inviting brewers to the czech republic to teach the world how to drink properly.",
+    "tags": [
+      "world's table",
+      "food & drink",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:21.754868",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "the story behind hollywood's most famous side-eye",
+    "url": "https://www.bbc.com/culture/article/20250627-the-forgotten-story-behind-the-most-famous-side-eye-in-hollywood-history",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "at a paramount studios dinner party in 1957, one of show business' most glamorous – and notorious – snapshots was taken, of actress sophia loren next to jayne mansfield.",
+    "tags": [
+      "art",
+      "art and design",
+      "photography",
+      "hollywood",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:21.891771",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "why an apple a day is really good for you",
+    "url": "https://www.bbc.com/future/article/20250620-is-an-apple-a-day-really-good-for-your-health",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "we're told \"an apple a day keeps the doctor away\", but does this humble fruit really have an outsized positive effect on our health?",
+    "tags": [
+      "food",
+      "nutrition",
+      "chemistry",
+      "health",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:21.995845",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "thousands protest in bangkok calling for thai pm to resign",
+    "url": "https://www.bbc.com/news/articles/ceq7glqzr53o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "demands to resign follow a leaked phone call the prime minister had with cambodia's former leader about a border dispute.",
+    "tags": [
+      "thailand",
+      "bangkok",
+      "cambodia"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:22.082821",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "'proud to be gay': k-pop star on coming out to the world",
+    "url": "https://www.bbc.com/news/articles/cn5kx7wn1nzo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "only a handful of k-pop artists have come out as gay, but none as publicly as bain. is this a turning point?",
+    "tags": [
+      "asia",
+      "k-pop",
+      "south korea",
+      "lgbt",
+      "music"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:22.176104",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "the mystery of the paedophile who hired out disneyland",
+    "url": "https://www.bbc.com/news/articles/c93kg14zn3zo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "jacky jhaj organised a fake wedding to a nine-year-old last weekend - and previously got fake fans to fawn over him on a red carpet.",
+    "tags": [
+      "paris"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:22.263905",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "thousands party at budapest pride in clear message to orban",
+    "url": "https://www.bbc.com/news/articles/clylnev5y36o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "a giant crowd throngs the hungarian capital, championing lgbt rights and defying pm viktor orban.",
+    "tags": [
+      "budapest",
+      "pride",
+      "viktor orban",
+      "lgbt",
+      "hungary"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:22.658156",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "at least 81 people killed in israeli strikes in gaza, hamas-run health ministry says",
+    "url": "https://www.bbc.com/news/articles/czry8g5n80zo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "hospital staff and witnesses said at least 11 people were killed after a strike near tents housing displaced people on friday.",
+    "tags": [
+      "israel-gaza war",
+      "israel",
+      "palestinian territories"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:23.122973",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "'proud to be gay': k-pop star on coming out to the world",
+    "url": "https://www.bbc.com/news/articles/cn5kx7wn1nzo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "only a handful of k-pop artists have come out as gay, but none as publicly as bain. is this a turning point?",
+    "tags": [
+      "asia",
+      "k-pop",
+      "south korea",
+      "lgbt",
+      "music"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:23.212724",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "a pioneering doctor remembers india leader indira gandhi's final moments",
+    "url": "https://www.bbc.com/news/articles/cvgenl7gv2lo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "sneh bhargava, the first woman to helm one of india's top medical institutions, was called upon to treat indira gandhi after she was shot in 1984.",
+    "tags": [
+      "asia",
+      "india",
+      "history"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:23.303583",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "the mystery of the paedophile who hired out disneyland",
+    "url": "https://www.bbc.com/news/articles/c93kg14zn3zo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "jacky jhaj organised a fake wedding to a nine-year-old last weekend - and previously got fake fans to fawn over him on a red carpet.",
+    "tags": [
+      "paris"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:23.390904",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "how the first 'sensational' picture of lady diana came about",
+    "url": "https://www.bbc.com/reel/video/p0kr3tk9/how-the-first-sensational-picture-of-lady-diana-came-about",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "it starts nearly 40 years ago, when a teenage girl is pulled out of obscurity and thrust into the spotlight.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:24.504326",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "watch the dramatic escape of tiny fish from deadly sharks",
+    "url": "https://www.bbc.com/reel/video/p0k74hwb/watch-the-dramatic-escape-of-tiny-fish-from-deadly-sharks",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the moorish idol, a dramatic little fish with dazzling stripes, adopts a clever strategy to save its life.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:25.475845",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "an inside look at the near-death experience",
+    "url": "https://www.bbc.com/reel/video/p0gwr9wz/an-inside-look-at-the-near-death-experience",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "a new study might explain why dying patients' lives flash before their eyes.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:26.010549",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "the enduring mystery of amelia earhart",
+    "url": "https://www.bbc.com/reel/video/p0h86rjz/the-enduring-mystery-of-amelia-earhart",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "has amelia earhart's plane really been found? here are the key things to know.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:26.660692",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "when dressing in drag could get you arrested",
+    "url": "https://www.bbc.com/reel/video/p0lls0yt/when-dressing-in-drag-could-get-you-arrested",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "in 1962, dozens were arrested at a drag and trans ball in new york under laws criminalising gender nonconformity.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:27.230717",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "lyme disease: the devastating impact of a tick bite",
+    "url": "https://www.bbc.com/reel/video/p0g3c56c/lyme-disease-the-devastating-impact-of-a-tick-bite",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "as the planet continues to warm, this summer could be the worst yet for tick-borne infections like lyme disease.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:28.026333",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "is alkaline water good for you?",
+    "url": "https://www.bbc.com/reel/video/p0g27l49/is-alkaline-water-good-for-you-",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the truth about alkaline water. does it really provide health benefits by balancing our ph levels?",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:28.521833",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "jane fonda: 'it's much harder to be young than it is old'",
+    "url": "https://www.bbc.com/reel/video/p08ztyzt/jane-fonda-it-s-much-harder-to-be-young-than-it-is-old-",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "at 82 years old, jane fonda is winning awards, protesting, and getting arrested.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:28.947541",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "10 of the best films to watch this july",
+    "url": "https://www.bbc.com/culture/article/20250625-10-of-the-best-films-to-watch-this-july",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "from superman to i know what you did last summer – these are the films to watch at the cinema and stream at home this month.",
+    "tags": [
+      "the watch list",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:29.605751",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "nine of the best tv shows to watch this july",
+    "url": "https://www.bbc.com/culture/article/20250623-nine-of-the-best-tv-shows-to-watch-this-july",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "from lena dunham's new netflix rom-com, set in london, to the return of michael c hall's murderous dexter and a stunning wildlife series.",
+    "tags": [
+      "the watch list",
+      "television",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:30.203870",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "the tiny european island of tolerance",
+    "url": "https://www.bbc.com/travel/article/20240130-malta-the-tiny-european-island-of-tolerance",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "inspired by a trailblazing transgender model, malta has become one of the most accepting countries in the world in the past 20 years.",
+    "tags": [
+      "lgbt",
+      "history",
+      "nightlife",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:30.310686",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "the indian princess who lived in nazi germany",
+    "url": "https://www.bbc.com/news/uk-england-suffolk-64669420",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the overlooked story of catherine duleep singh, the queer daughter of the last king of the punjab.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:31.102487",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "one of the world's earliest gay anthems",
+    "url": "https://www.bbc.com/culture/article/20250624-the-1928-song-that-is-one-the-worlds-first-gay-anthems-ma-rainey",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "ma rainey's sensational prove it on me blues is a landmark song that had a profound and lasting effect.",
+    "tags": [
+      "music",
+      "music-history",
+      "lgbt",
+      "lgbtq+ pride",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:31.755973",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "a look at the key items in trump's 'big, beautiful bill'",
+    "url": "https://www.bbc.com/news/articles/c0eqpz23l9jo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the tax and spending bill, which is set for a senate vote, includes sweeping changes to taxes, social security and more.",
+    "tags": [
+      "us politics",
+      "us congress",
+      "united states"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:32.338452",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "car bomb attack in pakistan kills at least 13 soldiers",
+    "url": "https://www.bbc.com/news/articles/cjd2z0d8772o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "pakistan's military accuses india of backing militants behind the attack, which india denies.",
+    "tags": [
+      "pakistan",
+      "india"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:32.425232",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "lowe hits back at stadium announcer's trolling",
+    "url": "https://www.bbc.com/sport/rugby-union/articles/cgq734dkng3o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "lions winger james lowe hits back at the perth stadium announcer's trolling about the tourists' southern hemisphere-born players.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:32.520282",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "'we have all the cards' - trump says he is ending canada trade talks",
+    "url": "https://www.bbc.com/news/articles/ckg629n7wzvo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "canada had been hoping to secure a trade deal with the us next month to avoid steep tariffs.",
+    "tags": [
+      "trump tariffs",
+      "canada",
+      "mark carney",
+      "donald trump",
+      "united states"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:33.539716",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "council claims ai pilot saves staff time",
+    "url": "https://www.bbc.com/news/articles/crl0d5n4e67o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "stockton bosses say the systems, which transcribe meetings and reduce paperwork, free-up staff.",
+    "tags": [
+      "stockton-on-tees borough council",
+      "artificial intelligence",
+      "stockton-on-tees",
+      "unison"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:33.630076",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "uk food retailers pushed to make healthy options more appealing",
+    "url": "https://www.bbc.com/news/articles/ckg5xzpmxzgo",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the government is partnering with food businesses in england to reduce calories content of the weekly shop.",
+    "tags": [
+      "obesity",
+      "health",
+      "supermarkets",
+      "food"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:33.764063",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "marilyn manson gig cancelled after protests",
+    "url": "https://www.bbc.com/news/articles/ckgd4ewln09o",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the us rock star is planning to bring his latest tour to the uk in october and november.",
+    "tags": [
+      "brighton",
+      "music"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:33.850833",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "the real meaning of van gogh's sunflowers",
+    "url": "https://www.bbc.com/culture/article/20250625-the-real-meaning-of-van-goghs-sunflowers",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "they helped to make vincent van gogh among the most famous and influential painters in the history of art. why did sunflowers obsess him and so many other artists before and since?",
+    "tags": [
+      "art",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:34.530902",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "how 'school stays' are reviving rural japan",
+    "url": "https://www.bbc.com/travel/article/20250626-how-school-stays-are-saving-japans-dying-villages",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "some 450 rural schools close each year, as japanese increasingly migrate to cities. now, some are being transformed into unique inns close to nature.",
+    "tags": [
+      "hotels",
+      "mountain",
+      "heritage",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:35.115292",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "is there such a thing as american cuisine?",
+    "url": "https://www.bbc.com/travel/article/20250606-felicity-cloakes-american-food-odyssey",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "for her new book, peach street to lobster lane, british food writer felicity cloake cycles across the us from coast to coast in search of a definition for its national cuisine.",
+    "tags": [
+      "food & drink",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:35.668577",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "can la fire-proof itself?",
+    "url": "https://www.bbc.com/future/article/20250626-can-la-fire-proof-itself",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "six months after the wildfires tore through los angeles, residents are tussling with the urban destruction left behind – and a debate over the future of the city's buildings.",
+    "tags": [
+      "earth",
+      "fire",
+      "wildfire",
+      "environment",
+      "extreme weather",
+      "features"
+    ],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:36.072739",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "the hidden calories we consume without knowing",
+    "url": "https://www.bbc.com/reel/video/p0ll3ht3/the-hidden-calories-we-consume-without-knowing",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "many of us get a quarter of our daily calories from our snacks, but there are ways to snack more smartly.",
+    "tags": [],
+    "source_type": "news",
+    "source": "BBC News",
+    "scraped_at": "2025-06-29T18:27:36.524027",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 2,
+    "task_id": 4
+  },
+  {
+    "title": "mamdani's race-based tax plan for nyc neighborhoods condemned by ny post",
+    "url": "https://www.foxnews.com/media/new-york-post-editorial-slams-zohran-mamdanis-plan-taxing-whites-more-calls-pure-racism",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'sorry, zohran — we need a mayor for all new yorkers,' the new york post editorial asserted",
+    "tags": [
+      "media",
+      "new york city",
+      "state and local elections",
+      "politics",
+      "democratic party"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:30.474402",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "jake paul erupts with vulgar orders after beating boxing legend's son",
+    "url": "https://www.foxnews.com/sports/jake-paul-tells-booing-crowd-shut-f-up-beating-julio-cesar-chavez",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "boxing judges scored the cruiserweight bout 99-91, 98-92 and 97-93 for paul in his most credible boxing matchup to date",
+    "tags": [
+      "jake paul",
+      "boxing",
+      "sports"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:30.634268",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "diddy 'might be cooked' on one charge as legal battle wraps up, expert warns",
+    "url": "https://www.foxnews.com/entertainment/diddy-might-cooked-key-sex-crime-jury-prepares-deliberate-expert-says",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "testimony in sean 'diddy' combs' sex trafficking and racketeering trial began on may 12",
+    "tags": [
+      "in court",
+      "sean 'diddy' combs",
+      "entertainment",
+      "trending news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:30.966539",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "newlyweds jeff bezos and lauren sánchez bezos pack on pda before star-studded bash",
+    "url": "https://www.foxnews.com/entertainment/newlyweds-jeff-bezos-lauren-sanchez-bezos-pack-pda-ahead-star-studded-wedding-celebration",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "kylie jenner, oprah winfrey among high-profile attendees spotted in glamorous attire for the third day of festivities",
+    "tags": [
+      "entertainment",
+      "jeff bezos",
+      "celebrity couples"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:31.547577",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "young assemblyman topples ex-governor in shocking nyc primary upset. dems must wake up",
+    "url": "https://www.foxnews.com/opinion/cuomo-comeback-crashed-young-voters-came-like-wrecking-ball",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "in defeating ex-gov. andrew cuomo in the nyc democratic mayoral primary, zohran mamdani didn’t just win a campaign. he upended a power structure",
+    "tags": [
+      "opinion",
+      "new york city",
+      "state and local primaries",
+      "politics",
+      "democratic party",
+      "andrew cuomo"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:32.122617",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "beach vacationers can follow simple steps to avoid shark attacks amid 'hysteria'",
+    "url": "https://www.foxnews.com/us/shark-week-host-warns-beachgoers-where-when-predators-most-likely-attack",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "a biologist offers summer safety tips for beachgoers as fear of shark attacks reaches a fever pitch",
+    "tags": [
+      "us",
+      "sharks",
+      "beach travel news",
+      "travel"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:32.255068",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "sailboat erupts in flames off florida coast as witness reports 'explosions'",
+    "url": "https://www.foxnews.com/us/boat-catches-fire-near-cape-canaveral-passengers-saved",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "witness reported explosions as four people evacuated from burning 61-foot vessel",
+    "tags": [
+      "florida",
+      "southeast",
+      "us fires",
+      "boating"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:32.386059",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "justice roberts issues warning to politicians who use heated rhetoric",
+    "url": "https://www.foxnews.com/politics/chief-justice-roberts-sounds-alarm-dangerous-rhetoric-aimed-judges-from-politicians",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the supreme court chief justice appeared to reference both president donald trump and sen. chuck schumer while defending judicial independence",
+    "tags": [
+      "supreme court",
+      "chuck schumer",
+      "donald trump",
+      "federal judges",
+      "politics"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:32.519732",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "tourist captures bison's final moments in yellowstone hot spring tragedy",
+    "url": "https://www.foxnews.com/us/horrified-tourists-watch-bison-boils-death-yellowstone-hot-spring",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "witness captures final moments as bison becomes trapped in nearly-boiling waters of grand prismatic spring",
+    "tags": [
+      "national parks",
+      "wild nature"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:32.793240",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "fox news readers' favorites: get early prime day deals on last year's bestsellers",
+    "url": "https://www.foxnews.com/deals/amazon-prime-day-trending-deals",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "shop early prime day deals on last year's top picks",
+    "tags": [
+      "deals",
+      "commerce",
+      "amazon deals"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:33.335519",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "scientists find alzheimer's-fighting compound in popular cooking ingredients",
+    "url": "https://www.foxnews.com/food-drink/ingredient-common-kitchen-herbs-could-target-alzheimers-dont-change-recipes",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "chemical in common herbs reduced brain inflammation, improved neuron connections in mice — holds promise for humans",
+    "tags": [
+      "food-drink",
+      "food",
+      "alzheimers",
+      "health",
+      "lifestyle",
+      "healthy foods",
+      "food",
+      "brain health",
+      "medical research",
+      "cooking basics"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:33.472656",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "american culture quiz time featuring iconic ice cream and remarkable museums",
+    "url": "https://www.foxnews.com/lifestyle/american-culture-quiz-test-yourself-iconic-ice-cream-marvelous-museums",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "test yourself — see how much you know about this week's hot topics!",
+    "tags": [
+      "quizzes",
+      "lifestyle",
+      "food-drink",
+      "entertainment",
+      "travel",
+      "history",
+      "wild nature",
+      "weddings tips & trends",
+      "dessert recipes"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:33.598862",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "the best early prime day deals: tech, home and more for less than $100",
+    "url": "https://www.foxnews.com/deals/best-deals-amazon",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "get early deals on amazon fire stick, ring doorbell, apple airtags and more",
+    "tags": [
+      "deals",
+      "commerce",
+      "amazon"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:33.765421",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "russia unleashes biggest aerial attack since conflict began, ukraine says",
+    "url": "https://www.foxnews.com/world/russia-launched-largest-aerial-attack-war-ukraine-says",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the attack was 'the most massive airstrike' against ukraine since russia launched its invasion, ukraine’s air force said",
+    "tags": [
+      "russia",
+      "ukraine",
+      "world",
+      "conflicts",
+      "vladimir putin",
+      "volodymyr zelenskyy"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:33.959012",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "colorado funeral home owner handed maximum sentence in disturbing fraud case",
+    "url": "https://www.foxnews.com/us/colorado-funeral-home-owner-sentenced-20-years-stashing-nearly-190-decaying-bodies",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'this is not an ordinary fraud case,' judge nina wang said, adding that the details warranted the maximum sentence",
+    "tags": [
+      "colorado",
+      "us",
+      "crime",
+      "police and law enforcement",
+      "law"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:34.114353",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "'stranger things' star millie bobby brown sizzles in string bikini during getaway",
+    "url": "https://www.foxnews.com/entertainment/stranger-things-star-millie-bobby-brown-sizzles-tiny-string-bikini-during-beach-getaway",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the 21-year-old actress showed off her toned physique in a paisley blue and green two-piece with white lace trim",
+    "tags": [
+      "millie bobby brown",
+      "entertainment",
+      "movies",
+      "tv",
+      "celebrity couples"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:34.366263",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "'full house' star opens up about how god 'shows up' in unexpected ways",
+    "url": "https://www.foxnews.com/entertainment/candace-cameron-bure-unexpected-way-god-shows-up-her-scariest-moments",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the 'full house' alum shares insights from her new devotional book about finding strength in faith even during failures",
+    "tags": [
+      "entertainment",
+      "exclusive interviews",
+      "books",
+      "tv"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:34.503161",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "socialist muslim mayoral nominee's rise reveals soros-funded web in democratic party",
+    "url": "https://www.foxnews.com/opinion/asra-nomani-how-socialist-muslims-seized-democratic-party-20-year-political-campaign",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "the rise of zohran mamdani is the product of a strategy partly funded by the house of soros, uniting socialism (red), political islam (green), and the democratic party (blue)",
+    "tags": [
+      "opinion",
+      "democratic party",
+      "george soros",
+      "socialism"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:34.784573",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "new jersey lawmaker proposes legislation to rename delaware bay",
+    "url": "https://www.foxnews.com/politics/new-jersey-lawmaker-proposes-legislation-renaming-delaware-bay-the-bay-new-jersey",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "'they’ve had a claim to that long enough,' gop state sen. michael testa said",
+    "tags": [
+      "new jersey",
+      "us",
+      "politics",
+      "donald trump",
+      "delaware",
+      "mexico"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:34.931093",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "hamas founder killed in gaza airstrike after planning brutal massacre",
+    "url": "https://www.foxnews.com/world/idf-kills-key-hamas-founder-deemed-orchestrator-oct-7-terror-attack-israel",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "hakham muhammad issa al-issa was actively working to rebuild hamas' organizational systems damaged during the war",
+    "tags": [
+      "israel",
+      "world",
+      "conflicts",
+      "terrorism"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:35.074329",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "researchers find cancer-fighting potential in fungus linked to ancient curse",
+    "url": "https://www.foxnews.com/health/ancient-pharaohs-curse-fungus-shows-promise-killing-cancer-cells",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "scientists modified fungal molecules to create compounds that performed as well as fda-approved drugs",
+    "tags": [
+      "health",
+      "cancer",
+      "genetics science",
+      "science",
+      "cancer research",
+      "blood cancer",
+      "lifestyle",
+      "medical research",
+      "archaeology"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:35.468761",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "teen's summer swim turns tragic after freak diving accident at popular beach",
+    "url": "https://www.foxnews.com/us/freak-accident-beach-sends-teen-icu-mom-warns-waterfront-danger",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "hampton beach fire chief says freak incident 'unfortunate' as teenager remains in intensive care",
+    "tags": [
+      "new hampshire",
+      "us",
+      "disasters",
+      "beach travel news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:35.607451",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "dodgers two-way star throws 'unbelievable' pitch, leaving team's manager stunned",
+    "url": "https://www.foxnews.com/sports/shohei-ohtanis-pitch-sets-personal-record-dodgers-star-continues-ramp-up-pitching-activity",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "one of ohtani's pitches reached 101.7 mph",
+    "tags": [
+      "los angeles dodgers",
+      "mlb",
+      "shohei ohtani",
+      "sports",
+      "kansas city royals"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:35.745391",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "golf star has fiery exchange with analyst and former pro over golf etiquette",
+    "url": "https://www.foxnews.com/sports/padraig-harrington-clashes-ex-pga-tour-pro-roger-maltbie-over-golf-etiquette-us-senior-open",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "maltbie, a five-time pga tour winner, is a golf analyst for nbc",
+    "tags": [
+      "golf",
+      "sports",
+      "pga tour"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:35.996735",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "rapper exits uk festivals after she says anti-israel agenda was heavily touted",
+    "url": "https://www.foxnews.com/media/rapper-pulls-out-music-festivals-alleging-wanted-make-free-palestine-statements-onstage",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "boomtown festival denies dictating performers' personal views despite azealia banks' allegations of political pressure",
+    "tags": [
+      "media",
+      "music industry news",
+      "hip hop rap"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:36.607071",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "blue city braces for deadly holiday as fox analyst takes action in brother's murder",
+    "url": "https://www.foxnews.com/us/chicago-braces-deadly-july-4-weekend-fox-news-analyst-takes-action-brothers-unsolved-murder",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "gianno caldwell's new book details his journey for justice after waiting years without answers in brother's murder",
+    "tags": [
+      "crime",
+      "homicide",
+      "chicago",
+      "chicago's crime wave",
+      "holiday",
+      "us"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:38.516867",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "man's solution to stop roommate from taking his groceries sparks fiery reaction",
+    "url": "https://www.foxnews.com/food-drink/internet-blasts-man-accused-stealing-roommates-groceries-sense-entitlement",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "debate erupts over grocery disputes among roommates",
+    "tags": [
+      "food-drink",
+      "food",
+      "lifestyle",
+      "food",
+      "family and friends",
+      "odd news",
+      "real estate"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:38.739780",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "centuries-old remains with brown hair found just below busy metropolitan streets",
+    "url": "https://www.foxnews.com/travel/utility-workers-digging-trenches-stumble-1000-year-old-mummy-intact-hair",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "skeleton with intact hair found during trench excavation in lima",
+    "tags": [
+      "travel",
+      "world",
+      "archaeology",
+      "history",
+      "historical discoveries",
+      "historic sites",
+      "south america",
+      "odd news"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:39.029330",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  },
+  {
+    "title": "americans flock to fox news as network crushes rivals during iran strike coverage",
+    "url": "https://www.foxnews.com/media/fox-news-outdraws-abc-nbc-cbs-during-breaking-news-coverage-us-strikes-irans-nuclear-facilities",
+    "author": null,
+    "publication_date_datetime": null,
+    "publication_date_readable": null,
+    "summary": "network's digital platform achieved best weekend of 2025 as americans sought information on military action",
+    "tags": [
+      "media",
+      "iran",
+      "israel",
+      "fox news digital"
+    ],
+    "source_type": "news",
+    "source": "Fox News",
+    "scraped_at": "2025-06-29T18:27:39.218143",
+    "metadata": {
+      "scraper": "NewsScraper",
+      "framework": "basicScraper/bs4"
+    },
+    "worker_id": 0,
+    "task_id": 6
+  }
+]

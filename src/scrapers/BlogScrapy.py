@@ -159,8 +159,8 @@ class BlogScrapy(Scraper):
             try:
                 # Create Article object from raw data
                 article = Article(
-                    title=item.get('title', ''),
-                    url=item.get('url', ''),
+                    title=item.get('title'),
+                    url=item.get('url'),
                     author=item.get('author'),
                     publication_date_datetime=item.get('publication_date_datetime'),
                     publication_date_readable=item.get('publication_date_readable'),
