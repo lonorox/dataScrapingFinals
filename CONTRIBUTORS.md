@@ -3,7 +3,8 @@
 This document tracks the contributions of team members to the Web Scraping System project.
 
 ## 👥 Team Members & Contributions
-
+### Elene Baiashvili
+**Role**: Selenium Scraper & Testing 
 
 
 **Major Contributions**:
@@ -33,6 +34,8 @@ This document tracks the contributions of team members to the Web Scraping Syste
 - Error handling and retry logic for web scraping
 
 ---
+### Saba Tchumburidze
+**Role**: BeautifulSoup Scraper & Analysis 
 
 
 **Major Contributions**:
@@ -63,6 +66,8 @@ This document tracks the contributions of team members to the Web Scraping Syste
 - Data visualization and charts
 
 ---
+### Saba Danelia
+**Role**: Concurrency & System Architecture 
 
 **Major Contributions**:
 - **Master-Worker Architecture**: Implemented concurrent scraping with multiprocessing
