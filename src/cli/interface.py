@@ -42,13 +42,14 @@ class WebScrapingCLI:
             print("1. 🚀 Start Scraping")
             print("2. ⚙️  Configure Settings")
             print("3. 📊 View Reports & Analytics")
-            print("4. 📁 Manage Data")
-            print("5. 🔧 System Status")
-            print("6. 📋 View Tasks")
-            print("7. ❌ Exit")
+            print("4. 📁 Run tests")
+            print("5. 📁 Manage Data")
+            print("6. 🔧 System Status")
+            print("7. 📋 View Tasks")
+            print("8. ❌ Exit")
             print("=" * 50)
 
-            choice = input("Select an option (1-7): ").strip()
+            choice = input("Select an option (1-8): ").strip()
 
             if choice == '1':
                 self.start_scraping_menu()
@@ -57,12 +58,14 @@ class WebScrapingCLI:
             elif choice == '3':
                 self.view_reports_menu()
             elif choice == '4':
-                self.manage_data_menu()
+                self.commands.run_all_tests()
             elif choice == '5':
-                self.commands.system_status()
+                self.manage_data_menu()
             elif choice == '6':
-                self.commands.view_tasks()
+                self.commands.system_status()
             elif choice == '7':
+                self.commands.view_tasks()
+            elif choice == '8':
                 print("👋 Goodbye!")
                 sys.exit(0)
             else:
@@ -104,11 +107,9 @@ class WebScrapingCLI:
         print("=" * 40)
         print("1. 📝 Edit Tasks")
         print("2. 🔧 Worker Settings")
-        print("3. 🌐 Proxy Settings")
-        print("4. 📊 Rate Limiting")
-        print("5. ⬅️  Back to Main Menu")
+        print("3. ⬅️  Back to Main Menu")
 
-        choice = input("Select option (1-5): ").strip()
+        choice = input("Select option (1-3): ").strip()
 
         if choice == '1':
             self.commands.edit_tasks()
@@ -116,10 +117,6 @@ class WebScrapingCLI:
             self.commands.worker_settings()
         elif choice == '3':
             self.commands.proxy_settings()
-        elif choice == '4':
-            self.commands.rate_limiting_settings()
-        elif choice == '5':
-            return
         else:
             print("❌ Invalid option.")
 

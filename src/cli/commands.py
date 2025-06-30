@@ -32,7 +32,6 @@ class WebScrapingCommands:
     def run_all_tasks(self):
         """Run all configured tasks"""
         print("\n🚀 Starting all scraping tasks...")
-        master = None
         try:
             # Create multiprocessing objects
             task_queue = Queue()
@@ -54,13 +53,13 @@ class WebScrapingCommands:
             print("⏳ Starting workers...")
 
             master.run(tasks)
+            master.export_combined_results()
             print("✅ Scraping completed successfully!")
             self.show_completion_summary()
 
         except Exception as e:
             print(f"❌ Error during scraping: {e}")
             log.error(f"Scraping error: {e}")
-
 
     def run_news_only(self):
         """Run only news scraping tasks"""
@@ -79,7 +78,6 @@ class WebScrapingCommands:
 
     def run_filtered_tasks(self, task_type):
         """Run tasks filtered by type"""
-        master = None
         try:
             tasks = generate_tasks()
             filtered_tasks = []
@@ -106,6 +104,7 @@ class WebScrapingCommands:
                             worker_status=worker_status)
 
             master.run(filtered_tasks)
+            master.export_combined_results()
             print(f"✅ {task_type.capitalize()} scraping completed!")
             self.show_completion_summary()
 
@@ -113,12 +112,10 @@ class WebScrapingCommands:
             print(f"❌ Error during {task_type} scraping: {e}")
             log.error(f"{task_type} scraping error: {e}")
 
-
     def run_custom_selection(self):
         """Run custom task selection"""
         print("\n🎯 Custom Task Selection")
         tasks = generate_tasks()
-        master = None
 
         print("\nAvailable tasks:")
         for i, task in enumerate(tasks):
@@ -158,10 +155,6 @@ class WebScrapingCommands:
 
         except (ValueError, IndexError) as e:
             print(f"❌ Invalid selection: {e}")
-        finally:
-            # Ensure proper cleanup
-            if master is not None:
-                master.cleanup()
 
     def edit_tasks(self):
         """Edit task configuration"""
@@ -471,6 +464,19 @@ class WebScrapingCommands:
         except Exception as e:
             print(f"❌ Error reading performance data: {e}")
 
+    def run_all_tests(self):
+        try:
+            import pytest
+            print("Running all tests with pytest...\n")
+            pytest.main(["-v", "tests/"])
+        except ImportError:
+            print("pytest not installed, falling back to unittest discovery...\n")
+            import unittest
+            loader = unittest.TestLoader()
+            suite = loader.discover('tests')
+            runner = unittest.TextTestRunner(verbosity=2)
+            result = runner.run(suite)
+            sys.exit(not result.wasSuccessful())
     def task_summary(self):
         """Show task summary"""
         print("\n📋 Task Summary")
@@ -627,6 +633,7 @@ class WebScrapingCommands:
         else:
             print("❌ No items found.")
 
+
     def system_status(self):
         """Show system status"""
         print("\n🔧 System Status")
@@ -708,11 +715,9 @@ class WebScrapingCommands:
         except Exception as e:
             print(f"❌ Error reading tasks: {e}")
 
-    def schedule_scraping(self):
-        """Schedule scraping tasks"""
-        print("\n🎯 Schedule Scraping")
-        print("⚠️  Scheduling feature not yet implemented.")
-        print("You can use cron jobs or system schedulers to run the CLI automatically.")
+    # def schedule_scraping(self):
+    #     """Schedule scraping tasks"""
+    #     print("\n🎯 Schedule Scraping")
 
     def show_completion_summary(self):
         """Show completion summary"""
