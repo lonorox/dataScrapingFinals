@@ -110,8 +110,8 @@ class Database:
                                 row.get('source'),
                                 row.get('scraped_at'),
                                 row.get('metadata'),
-                                int(row.get('worker_id', 0)) if row.get('worker_id') else 0,
-                                int(row.get('task_id', 0)) if row.get('task_id') else 0
+                                int(float(row.get('worker_id', 0))) if row.get('worker_id') else 0,
+                                int(float(row.get('task_id', 0))) if row.get('task_id') else 0
                             ))
                             
                             converted_count += 1
