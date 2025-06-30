@@ -1,15 +1,10 @@
-Elene Baiashvili: Created selenium scrapper, and scrapy crawler (BlogScrapy). Created tests
-Saba Tchumburidze: Created bs4 scrappers, with scraping strategy and scraping factory design patterns. Created analysis for data   in src/analysis
-Saba Danelia: Created concurrency scrapper (master/worker/task), created data models and databases. created cli interface. integration with reports and tests 
-
 # Contributors
 
 This document tracks the contributions of team members to the Web Scraping System project.
 
 ## 👥 Team Members & Contributions
 
-### Elene Baiashvili
-**Role**: Selenium Scraper & Testing Specialist
+
 
 **Major Contributions**:
 - **Selenium RSS Scraper**: Created the NPR RSS feed scraping system using Selenium WebDriver
@@ -39,8 +34,6 @@ This document tracks the contributions of team members to the Web Scraping Syste
 
 ---
 
-### Saba Tchumburidze
-**Role**: BeautifulSoup Scraper & Analysis Specialist
 
 **Major Contributions**:
 - **BeautifulSoup News Scrapers**: Created BBC and Fox News scrapers using BeautifulSoup
@@ -70,9 +63,6 @@ This document tracks the contributions of team members to the Web Scraping Syste
 - Data visualization and charts
 
 ---
-
-### Saba Danelia
-**Role**: Concurrency & System Architecture Specialist
 
 **Major Contributions**:
 - **Master-Worker Architecture**: Implemented concurrent scraping with multiprocessing

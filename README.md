@@ -369,5 +369,3 @@ logging.basicConfig(level=logging.DEBUG)
 - **System Status**: Use CLI to check system health
 
 ---
-
-**Happy Scraping! 🕷️📊** 
